@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/twenty"
+    android:id="@+id/rlmain"
+    android:background="@drawable/dotted_border_theme">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty">
+
+        <com.production.monoprix.util.TextviewSemiBold
+            android:id="@+id/txt_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="product name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteensp" />
+
+        <RelativeLayout
+            android:id="@+id/rltwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_product_name"
+            android:layout_marginTop="@dimen/ten">
+
+            <com.production.monoprix.util.TextviewMedium
+                android:id="@+id/txt_order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/hintcolor"
+                android:textSize="14sp" />
+
+            <com.production.monoprix.util.TextviewMedium
+                android:id="@+id/txt_order_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/twenty"
+                android:textColor="@color/hintcolor"
+                android:textSize="@dimen/thirteen" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/rltwo"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlthree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivQrCode"
+            android:layout_marginTop="@dimen/five">
+
+            <com.production.monoprix.util.TextviewMedium
+                android:id="@+id/txt_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:background="@drawable/buttonbgyellow"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twelve" />
+
+            <com.production.monoprix.util.TextviewMedium
+                android:id="@+id/txt_order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/twenty"
+                android:gravity="center_vertical"
+                android:textColor="@color/hintcolor"
+                android:textSize="@dimen/twelve" />
+
+        </RelativeLayout>
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_order_status_back"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/delivery_background"
+            android:textColor="@color/black"
+            android:textSize="@dimen/thirteen"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/ivQrCode" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

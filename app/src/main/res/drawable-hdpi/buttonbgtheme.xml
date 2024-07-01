@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:endColor="@color/theme"
+                android:centerColor="@color/theme"
+                android:startColor="@color/theme" />
+
+            <corners android:radius="20dp" />
+
+        </shape>
+    </item>
+</selector>
+
+
+    <!--Rounded Corners--><!--<corners android:bottomLeftRadius="25dp"
+    android:bottomRightRadius="25dp";
+    android:radius="25dp"
+    android:topLeftRadius="25dp" />-->
+
+
+    <!--Red&Pink gradient--><!--endColor  =    #ea2917  --><!--startColor  =    #e11b56  -->
+
+    <!--SandalDark gradient--><!--endColor  =    #bf9f57  --><!--startColor  =    #e9a002  -->
+
+    <!--Red gradient--><!--endColor  =    #fd3013  --><!--startColor  =    #f40057  -->
+
+    <!--Yellow_Red gradient--><!--endColor  =    #c96616  --><!--startColor  =    #c2152d  -->

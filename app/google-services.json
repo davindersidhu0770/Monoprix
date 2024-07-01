@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "264186065955",
+    "project_id": "monoprix-android",
+    "storage_bucket": "monoprix-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264186065955:android:fc8fcdfd3dccd174d36d96",
+        "android_client_info": {
+          "package_name": "com.production.monoprix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264186065955-0u9c381pclc4ls7q2euc1hj1fhe4otac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.production.monoprix",
+            "certificate_hash": "cbdb3fe93733df7f0689f66099c0c6764a1f14ec"
+          }
+        },
+        {
+          "client_id": "264186065955-3iv0f7qrkbc9sdkhb521jdco8i2ghg62.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.production.monoprix",
+            "certificate_hash": "cc6913ee3742abf5b9f5fa16eb4538468432e935"
+          }
+        },
+        {
+          "client_id": "264186065955-ag4tiq3vuob2p62dnnhequ7ipa3l230k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.production.monoprix",
+            "certificate_hash": "a1d31d6d4f86c0911791ab8e42f461d8a708a350"
+          }
+        },
+        {
+          "client_id": "264186065955-edaihhk1q85c5vt7o73c1abrrv8qu3s4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc0ilHnXTlc_WoWVpMLpggGtkw1bZshd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264186065955-0lert8rcm64hhli36kcgq6ju23r204te.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "264186065955-prve97u2gt62a77c9scrrt9nuq71caq5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.360bytes.Monoprix",
+                "app_store_id": "1561944518"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

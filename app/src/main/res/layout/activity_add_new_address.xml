@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include_address_list_toolbar"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_address_list_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginRight="@dimen/twenty"
+            android:orientation="vertical">
+
+            <!--Address-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inp_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/TextLabelBlack"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:hint="@string/hint_address"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Location-->
+            <RelativeLayout
+                android:id="@+id/relative_locate_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/txt_locate_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:layout_marginRight="25dp"
+                    android:background="@null"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:hint="@string/locateme"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="@dimen/forteen" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivLocateMe"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_address_location" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txt_locate_me"
+                    android:layout_marginTop="@dimen/ten"
+                    android:background="@color/black" />
+
+            </RelativeLayout>
+
+
+            <!--Postal Code-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/TextLabelBlack"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_postal_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:hint="@string/hint_postal_code"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--Mobile-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/tvm"
+                    android:theme="@style/TextLabelBlack">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_five"
+                        android:hint="@string/mobile_txt"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!--
+                                <TextView
+                                    android:id="@+id/tvm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:text="*"
+                                    android:textColor="@color/theme">
+
+                                </TextView>
+                -->
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/TextLabelBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="@string/country"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:text="@string/qatar"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ten"
+                android:theme="@style/TextLabelBlack"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/country"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:text="Qatar"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Country-->
+            <RelativeLayout
+                android:id="@+id/relative_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/sp_country_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/tvc"
+                    android:backgroundTint="@color/black"
+                    android:layoutDirection="locale"
+                    android:textDirection="locale" />
+
+                <!--
+                                <TextView
+                                    android:id="@+id/tvc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:text="*"
+                                    android:textColor="@color/theme">
+
+                                </TextView>
+                -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/sp_country_code"
+                    android:background="@color/black" />
+
+            </RelativeLayout>
+            <!--SelectCity-->
+            <RelativeLayout
+                android:id="@+id/relative_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/edt_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:layout_centerInParent="true"
+                    android:layout_toStartOf="@+id/tvcity"
+                    android:backgroundTint="@color/black"
+                    android:paddingLeft="2sp"
+                    android:textDirection="locale" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/edt_city"
+                    android:background="@color/black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/edt_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/edt_location"
+                    android:background="@color/black" />
+
+            </RelativeLayout>
+            <!--street-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ten"
+                android:theme="@style/TextLabelBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_street"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:hint="@string/street_txt"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--zone-->
+
+
+            <!--building-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/TextLabelBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_building"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="@string/building_txt"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--house no-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/TextLabelBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_house_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="@string/house_no_txt"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/tvzone"
+                    android:theme="@style/TextLabelBlack">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_zone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_five"
+                        android:fontFamily="@font/poppinsregular"
+                        android:hint="@string/zone_txt"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!--
+                                <TextView
+                                    android:id="@+id/tvzone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:text="*"
+                                    android:textColor="@color/theme">
+
+                                </TextView>
+                -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlzone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/spinner_zone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/tvc"
+                    android:backgroundTint="@color/black"
+                    android:layoutDirection="locale"
+                    android:paddingLeft="2sp"
+                    android:textDirection="locale" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/spinner_zone"
+                    android:background="@color/black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlmunicipality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/tvm"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:theme="@style/TextLabelBlack">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_municiplaity"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_five"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="@string/municipality"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--
+                                <TextView
+                                    android:id="@+id/tvm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:text="*"
+                                    android:textColor="@color/theme">
+
+                                </TextView>
+                -->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlplaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_places"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/tvc"
+                    android:backgroundTint="@color/black"
+                    android:layoutDirection="locale"
+                    android:textDirection="locale" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/spinner_places"
+                    android:background="@color/black" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp"
+                android:theme="@style/TextLabelBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_landmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_five"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="@string/nearme_Landmark_txt"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--<com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/ten"
+                    android:theme="@style/TextLabelBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_country"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_five"
+                        android:inputType="textPostalAddress"
+                        android:enabled="false"
+                        android:maxLines="1"
+                        android:textSize="14dp"
+                        android:hint="@string/hint_country"/>
+
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <RadioGroup
+                android:id="@+id/rg_address_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/checkbox_home_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_home"
+                    android:theme="@style/RadioButtonblack" />
+
+                <RadioButton
+                    android:id="@+id/checkbox_office_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_office"
+                    android:theme="@style/RadioButtonblack" />
+
+                <RadioButton
+                    android:id="@+id/checkbox_other_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_other"
+                    android:theme="@style/RadioButtonblack" />
+
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/checkbox_def_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:gravity="center_vertical"
+                android:text="@string/setdefault"
+                android:theme="@style/RadioButtonblack" />
+
+            <com.production.monoprix.util.TextviewBold
+                android:id="@+id/tv_address_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirty"
+                android:layout_marginBottom="@dimen/thirty"
+                android:background="@drawable/button_background"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="@dimen/twelve"
+                android:paddingBottom="@dimen/twelve"
+                android:text="@string/label_save_continue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fifteen" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

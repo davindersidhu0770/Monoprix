@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+    <RelativeLayout
+            android:id="@+id/rele_top_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="@dimen/sixteen"
+            android:paddingTop="@dimen/eight"
+            android:paddingEnd="@dimen/sixteen"
+            android:paddingBottom="@dimen/eight">
+
+        <ImageView
+            android:id="@+id/img_add_cart"
+            android:layout_width="@dimen/fourtyfive"
+            android:layout_height="@dimen/fourtyfive"
+            android:src="@drawable/cart" />
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_cart_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@id/img_add_cart"
+            android:background="@drawable/oval_black_bg"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLength="2"
+            android:padding="@dimen/two"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ten"
+            android:visibility="visible" />
+
+        <LinearLayout
+                android:id="@+id/linear_cart_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty"
+                android:gravity="left"
+                android:layout_marginEnd="@dimen/sixteen"
+                android:layout_toEndOf="@+id/txt_cart_count"
+                android:orientation="vertical">
+
+            <com.production.monoprix.util.TextviewSemiBold
+                    android:id="@+id/cart_top_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/er_cart_empty"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteensp" />
+
+            <com.production.monoprix.util.TextviewRegular
+                    android:id="@+id/txt_cart_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:text="@string/er_cart_empty1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ten" />
+
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/img_more_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/linear_cart_items"
+                android:src="@drawable/ic_arrow_up"
+                android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <!--WithOutCartList-->
+    <LinearLayout
+            android:id="@+id/linear_scan_bottom_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rele_top_items"
+            android:layout_marginTop="@dimen/sixteen"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <com.production.monoprix.util.TextviewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="@dimen/five"
+                android:text="@string/txt_no_data"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteen" />
+
+        <com.production.monoprix.util.TextviewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="@dimen/five"
+                android:text="@string/txt_no_data_desc"
+                android:textSize="@dimen/sixteen" />
+
+    </LinearLayout>
+
+</RelativeLayout>

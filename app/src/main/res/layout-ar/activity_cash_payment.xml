@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+            android:id="@+id/include"
+            layout="@layout/include_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"/>
+    <ImageView
+            android:id="@+id/txt_cash"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="@dimen/fifteen"
+            android:textColor="@color/paycolor"
+            android:text="@string/cash"
+            android:scaleType="fitXY"
+            android:layout_marginTop="@dimen/twenty"
+            android:src="@drawable/ic_cash_on"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            />
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cash" />
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thirty"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_message" />
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_orderamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_orderid" />
+
+    <ImageView
+            android:id="@+id/img_barcode"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/thirty"
+            android:src="@drawable/dummy3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_orderamount" />
+
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_payment_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thirty"
+            android:text="@string/paymentdone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_barcode"
+            />
+
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty_two"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginEnd="@dimen/thirty_two"
+            android:layout_marginBottom="@dimen/thirty"
+            android:background="@drawable/white_rectangle_corner_back"
+            android:gravity="center"
+            android:lineSpacingExtra="1sp"
+            android:paddingStart="@dimen/forty"
+            android:paddingTop="@dimen/fifteen"
+            android:paddingEnd="@dimen/forty"
+            android:paddingBottom="@dimen/fifteen"
+            android:text="@string/verify"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentysp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_payment_done" />
+</androidx.constraintlayout.widget.ConstraintLayout>

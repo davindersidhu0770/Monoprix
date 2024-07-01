@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="hintcolor">#959090</color>
+
+    <color name="white">#ffffff</color>
+    <color name="highlight">#2196F3</color>
+    <color name="greycolor">#AAAAAA</color>
+    <color name="black">#000</color>
+    <color name="grey">#666161</color>
+    <color name="darkcolor">#040404</color>
+    <color name="red">#e62625</color>
+    <color name="theme">#D33B32</color>  // EB212E
+    <color name="yellow">#FFBF00</color>
+    <color name="hm_color">#e62525</color>
+    <color name="gray">#f0f0f0</color>
+    <color name="back_color">#fff</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorgray">#989898</color>
+    <color name="colordarkgray">#8e8e93</color>
+    <color name="paycolor">#464646</color>
+    <color name="stroke">#A09E9E</color>
+    <color name="background_grey">#44000000</color>
+    <color name="textcolor">#8C8B8B</color>
+    <!--home page-->
+    <color name="colordarkred">#970612</color>
+    <color name="color2">#d10612</color>
+    <color name="color3">#de0310</color>
+    <color name="color4">#f40311</color>
+    <color name="color5">#f80d1a</color>
+    <color name="color6">#d4d4d4</color>
+    <color name="colorViewBorder">#DBDBDB</color>
+    <color name="colorDarkGray">#818181</color>
+    <color name="navigation">#5c5c5d</color>
+    <color name="appPrimaryCartTopBackground">#2d4059</color>
+    <color name="green">#5FC583</color>
+    <color name="back_gray">#fafafa</color>
+    <color name="blue">#2873ea</color>
+    <color name="view">#e9e9e9</color>
+    <color name="delete">#961d1a</color>
+
+
+</resources>

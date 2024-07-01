@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--<androidx.constraintlayout.widget.Guideline
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/midGuidLine"
+                    android:orientation="horizontal"
+                    />-->
+            <com.production.monoprix.util.TextviewRegular
+                android:id="@+id/txt_order_status_back"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/green_rect"
+                android:textColor="@color/black"
+                android:textSize="@dimen/forteen"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/order_list" />
+
+            <com.production.monoprix.util.TextviewRegular
+                android:id="@+id/txt_order_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/five"
+                android:layout_marginTop="@dimen/twenty"
+                android:text="Delivered"
+                android:textColor="@color/green"
+                android:textSize="@dimen/forteen"
+                app:layout_constraintEnd_toStartOf="@+id/payment_txt"
+                app:layout_constraintStart_toEndOf="@+id/txt_order_status_back"
+                app:layout_constraintTop_toBottomOf="@+id/order_list"
+                app:layout_constraintWidth_percent=".4" />
+
+            <com.production.monoprix.util.TextviewRegular
+                android:id="@+id/payment_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="@dimen/twenty"
+                android:text="@string/payment_txt"
+                app:layout_constraintEnd_toStartOf="@id/payment_mode"
+                app:layout_constraintStart_toEndOf="@+id/txt_order_status"
+                app:layout_constraintTop_toBottomOf="@id/order_list" />
+
+            <com.production.monoprix.util.TextviewBold
+                android:id="@+id/payment_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginEnd="@dimen/ten"
+                android:gravity="end"
+                android:text="Debit card"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/payment_txt"
+                app:layout_constraintTop_toBottomOf="@id/order_list" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/twenty"
+                android:background="@color/colorViewBorder"
+                app:layout_constraintTop_toBottomOf="@+id/txt_order_status" />
+
+            <com.production.monoprix.util.TextviewBold
+                android:id="@+id/address_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/twenty"
+                android:drawableStart="@drawable/shipping_img"
+                android:drawablePadding="@dimen/five"
+                android:text="@string/address_lbl"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteen"
+                app:layout_constraintTop_toBottomOf="@id/view3" />
+
+
+            <com.production.monoprix.util.TextviewRegular
+                android:id="@+id/address_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty"
+                android:textColor="@color/black"
+                android:textSize="@dimen/forteen"
+                app:layout_constraintTop_toBottomOf="@id/address_lbl" />
+
+            <View
+                android:id="@+id/address_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/twenty"
+                android:background="@color/colorViewBorder"
+                app:layout_constraintTop_toBottomOf="@+id/address_txt" />
+
+
+            <com.production.monoprix.util.TextviewRegular
+                android:id="@+id/txt_loyalty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/twenty"
+                android:lineSpacingExtra="3.3sp"
+                android:text="@string/loyal_point"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteensp"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_view" />
+
+
+            <View
+                android:id="@+id/loyalty_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/twenty"
+                android:background="@color/colorViewBorder"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/txt_loyalty" />
+
+            <com.production.monoprix.util.TextviewRegular
+                android:id="@+id/txt_st_sub_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/twenty"
+                android:lineSpacingExtra="3.3sp"
+                android:text="@string/subtotal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteensp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loyalty_view" />
+
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/fifteen"
+                android:background="@color/colorViewBorder"
+                app:layout_constraintTop_toBottomOf="@id/txt_st_sub_total" />
+
+            <com.production.monoprix.util.TextviewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/fifteen"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="3.3sp"
+                android:text="@string/pa"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/fifteensp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+
+            <com.production.monoprix.util.TextviewRegular
+                android:id="@+id/tv_loyalty_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginEnd="@dimen/twenty"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="3.3sp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteensp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_view" />
+
+            <com.production.monoprix.util.TextviewRegular
+                android:id="@+id/txt_sub_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginEnd="@dimen/twenty"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="3.3sp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteensp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loyalty_view" />
+
+
+            <com.production.monoprix.util.TextviewBold
+                android:id="@+id/txt_payableamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginEnd="@dimen/twenty"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="3.3sp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/fifteensp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/fifteen"
+                android:background="@color/colorViewBorder"
+                app:layout_constraintTop_toBottomOf="@id/txt_payableamount" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivQrCode"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+            <com.production.monoprix.util.TextviewBold
+                android:id="@+id/txt_verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/thirty_two"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginEnd="@dimen/thirty_two"
+                android:layout_marginBottom="@dimen/thirty"
+                android:background="@drawable/green_rect"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:paddingStart="@dimen/forty"
+                android:paddingTop="@dimen/fifteen"
+                android:paddingEnd="@dimen/forty"
+                android:paddingBottom="@dimen/fifteen"
+                android:text="@string/re_order"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twentysp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivQrCode"
+                app:textAllCaps="true" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

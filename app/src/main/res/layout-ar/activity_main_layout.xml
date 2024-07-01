@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:layout_width="match_parent"
+            android:id="@+id/include"
+            android:layout_height="wrap_content"
+            layout="@layout/include_home_header"/>
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="?android:attr/windowBackground"
+            app:itemIconTint="@color/bnv_tab_item_foreground"
+            app:itemTextAppearanceActive="@style/navTextActive"
+            app:itemTextAppearanceInactive="@style/navTextInactive"
+            app:itemTextColor="@color/bnv_tab_item_foreground"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/navigation" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.production.monoprix.ui.navigation.DrawerFragment"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/activity_navigation"
+        tools:layout="@layout/activity_navigation"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

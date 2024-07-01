@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_color">
+
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/product_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <com.production.monoprix.util.TextviewBold
+                    android:id="@+id/txt_checkout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/twenty"
+                    android:layout_marginTop="@dimen/twenty"
+                    android:layout_marginEnd="@dimen/twenty"
+                    android:layout_marginBottom="@dimen/twenty"
+                    android:background="@drawable/white_rectangle_corner_back"
+                    android:gravity="center"
+                    android:lineSpacingExtra="1sp"
+                    android:paddingStart="@dimen/forty"
+                    android:paddingTop="@dimen/twelve"
+                    android:paddingEnd="@dimen/forty"
+                    android:paddingBottom="@dimen/twelve"
+                    android:text="@string/checkout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twentysp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/product_list" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+            android:id="@+id/include_empty_cart"
+            layout="@layout/activity_empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+
+</RelativeLayout>

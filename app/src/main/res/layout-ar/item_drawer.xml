@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:tint="@color/black"
+        android:visibility="gone" />
+
+    <com.production.monoprix.util.TextviewRegular
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="3.3sp"
+        android:paddingRight="@dimen/twenty"
+        android:paddingTop="@dimen/eighteen"
+        android:textDirection="rtl"
+        android:paddingBottom="@dimen/eighteen"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/stroke">
+
+
+    </View>
+</LinearLayout>

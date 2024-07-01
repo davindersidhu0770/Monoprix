@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back_color">
+
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fifty"
+            android:layout_marginTop="@dimen/thirty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:drawableEnd="@drawable/ic_wrong"
+            android:gravity="start"
+            android:text="@string/infoheading"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_descp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fifty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:text="@string/infodesc"
+            android:textColor="@color/black"
+            android:textSize="@dimen/forteen"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_heading" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSteps"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/fifty"
+            android:layout_marginTop="@dimen/thirty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:layout_marginBottom="@dimen/thirty"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_heading" />
+</androidx.constraintlayout.widget.ConstraintLayout>

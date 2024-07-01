@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.production.monoprix.util.TextviewSemiBold
+            android:id="@+id/txt_product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5sp"
+            android:text="Sprite Soft Drink 1.75 L + Thums Up Soft DrinkDrinkDrinkDrinkDrinkDrinkDrink"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteensp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginEnd="@dimen/ten"
+            android:background="@drawable/green_rect"
+            android:drawableStart="@drawable/ic_local_offer_white"
+            android:drawablePadding="@dimen/five"
+            android:gravity="center"
+            android:paddingStart="@dimen/ten"
+            android:paddingTop="2dp"
+            android:paddingEnd="@dimen/ten"
+            android:paddingBottom="2dp"
+            android:text="@string/free"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ten"
+            android:visibility="gone"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@+id/txt_product_title"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <com.production.monoprix.util.TextviewMedium
+            android:id="@+id/txt_discount_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:lineSpacingExtra="4sp"
+            android:text="QR 270"
+            android:textColor="@color/hintcolor"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_product_title" />
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginTop="@dimen/five"
+            android:lineSpacingExtra="4sp"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/fifteensp"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/txt_discount_price"
+            app:layout_constraintTop_toBottomOf="@+id/txt_product_title" />
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_you_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginTop="@dimen/five"
+            android:lineSpacingExtra="6sp"
+            android:text="You Save QR 30"
+            android:textColor="@color/red"
+            android:textSize="@dimen/fifteensp"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/txt_original_price"
+            app:layout_constraintTop_toBottomOf="@+id/txt_product_title" />
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five"
+            android:drawableStart="@drawable/ic_local_offer"
+            android:drawablePadding="@dimen/ten"
+            android:lineSpacingExtra="6sp"
+            android:maxLines="2"
+            android:text="You Save QR 30"
+            android:textColor="@color/green"
+            android:textSize="@dimen/twelve"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_discount_price" />
+
+        <RelativeLayout
+            android:id="@+id/relative_update_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_offer">
+
+
+            <LinearLayout
+                android:id="@+id/linear_items"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:visibility="visible"
+                android:weightSum="3">
+
+                <com.production.monoprix.util.TextviewMedium
+                    android:id="@+id/img_cart_minus"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greyround4dp"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <com.production.monoprix.util.TextviewMedium
+                    android:id="@+id/txt_cart_quant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/fifteen"
+                    android:paddingEnd="@dimen/fifteen"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <com.production.monoprix.util.TextviewMedium
+                    android:id="@+id/img_cart_plus"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/greyround4dp"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_cart_delete"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/linear_items"
+                android:layout_alignBottom="@id/linear_items"
+                android:layout_marginStart="@dimen/fifteen"
+                android:layout_toEndOf="@+id/linear_items">
+
+                <ImageView
+                    android:id="@+id/img_cart_delete"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/greyround4dp"
+                    android:padding="@dimen/eight"
+                    android:src="@drawable/ic_delete" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/viewborder"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorViewBorder"
+        app:layout_constraintTop_toBottomOf="@id/mainLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

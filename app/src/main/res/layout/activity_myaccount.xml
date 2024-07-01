@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mr"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:theme="@style/RadioButtonblack" />
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mrs"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:theme="@style/RadioButtonblack" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ms"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:theme="@style/RadioButtonblack" />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/twenty"
+                    android:layout_toStartOf="@+id/tvn"
+                    android:theme="@style/TextLabelBlack">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                        android:hint="@string/name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--
+                                <TextView
+                                    android:id="@+id/tvn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:text="*"
+                                    android:textColor="@color/theme">
+
+                                </TextView>
+                -->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_input_familyname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/twenty"
+                    android:theme="@style/TextLabelBlack"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_input_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_familyname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                        android:hint="@string/familyname"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--
+                                <TextView
+                                    android:id="@+id/tvf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:text="*"
+                                    android:textColor="@color/theme">
+
+                                </TextView>
+                -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/twenty"
+                    android:theme="@style/TextLabelBlack"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_input_familyname">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:hint="@string/email"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--
+                                <TextView
+                                    android:id="@+id/tve"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:text="*"
+                                    android:textColor="@color/theme">
+
+                                </TextView>
+                -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/twenty"
+                    android:layout_toStartOf="@+id/tvdob"
+                    android:theme="@style/TextLabelBlack"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_input_familyname">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_dateofbirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="@string/dob"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--
+                                <TextView
+                                    android:id="@+id/tvdob"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:text="*"
+                                    android:textColor="@color/theme">
+
+                                </TextView>
+                -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@+id/txt_input_loyality">
+
+                <com.production.monoprix.util.TextviewRegular
+                    android:id="@+id/tvhint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sixteen"
+                    android:paddingLeft="5sp"
+                    android:text="@string/select_country"
+                    android:textColor="@color/black"
+
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/rlm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                    <TextView
+                        android:id="@+id/tvcountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10sp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                    <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/five"
+                        android:layout_toStartOf="@+id/ivdrop"
+                        android:paddingTop="10sp"
+                        android:visibility="gone"
+                        app:ccp_arrowSize="1sp"
+                        app:ccp_hideNameCode="true"
+                        app:ccp_hidePhoneCode="true"
+                        app:ccp_showFlag="false"
+                        app:ccp_showFullName="true"
+                        app:ccp_textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/ivdrop"
+                        android:layout_width="13sp"
+                        android:layout_height="13sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10sp"
+                        android:src="@drawable/dropdown">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/rlm"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginEnd="@dimen/twenty"
+                android:layout_toStartOf="@+id/tve"
+                android:theme="@style/TextLabelBlack"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/select_country"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:text="@string/qatar"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginEnd="@dimen/twenty"
+                android:background="@color/black"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+            <RelativeLayout
+                android:id="@+id/rlspinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/txt_input_email">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty">
+
+                <RelativeLayout
+                    android:id="@+id/rlcode"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true">
+
+                    <!--  <TextView
+                          android:id="@+id/tvcode"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:gravity="center_vertical"
+                          android:paddingLeft="2sp"
+                          android:paddingTop="@dimen/_5sdp"
+                          android:text="@string/countrycode"
+                          android:textColor="@color/hintcolor"
+                          android:textSize="12sp">
+
+                      </TextView>
+
+                      <EditText
+                          android:id="@+id/txt_countrycode"
+                          android:layout_width="@dimen/_70sdp"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/tvcode"
+                          android:background="@null"
+                          android:clickable="false"
+                          android:editable="false"
+                          android:focusable="false"
+                          android:focusableInTouchMode="false"
+                          android:hint="@string/countrycode"
+                          android:inputType="text"
+                          android:maxLines="1"
+                          android:paddingLeft="2sp"
+                          android:text="@string/_974_qatar"
+                          android:textColor="@color/black"
+                          android:textSize="14sp" />
+  -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:theme="@style/TextLabelBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_countrycode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:hint="@string/countrycode"
+                            android:maxLines="1"
+                            android:text="@string/_974_qatar"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rlcode">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:theme="@style/TextLabelBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_mobile_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:hint="@string/mobilenumber"
+                            android:inputType="none"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginEnd="@dimen/twenty"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/rlarea"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/fifteen">
+
+                <com.production.monoprix.util.TextviewRegular
+                    android:id="@+id/tvhint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selectarea"
+                    android:textColor="@color/black"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tvhint1">
+
+                    <Spinner
+                        android:id="@+id/spinner_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="@color/black"
+                        android:spinnerMode="dialog" />
+
+                </RelativeLayout>
+
+
+                <!--
+                                <TextView
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:id="@+id/tvsp"
+                                    android:layout_width="wrap_content"
+                                    android:textColor="@color/theme"
+                                    android:text="*"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                -->
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginEnd="@dimen/twenty"
+                android:background="@color/black" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_loyality"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty"
+                android:theme="@style/TextLabelBlack"
+                app:layout_constraintTop_toBottomOf="@+id/txt_input_mobile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_loyality_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/loyaltynumber"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_change_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@+id/txt_input_loyality">
+
+                <com.production.monoprix.util.TextviewRegular
+                    android:id="@+id/txt_input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sixteen"
+                    android:text="@string/password"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.production.monoprix.util.TextviewRegular
+                    android:id="@+id/txt_password_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:text="**************"
+                    android:textColor="@color/black" />
+
+
+                <ImageView
+                    android:id="@+id/img_edit_password"
+                    android:layout_width="@dimen/twenty_five"
+                    android:layout_height="@dimen/twenty_five"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/forty"
+                    android:padding="@dimen/two"
+                    android:src="@drawable/ic_edit"
+                    android:tint="@color/black" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/txt_password_ac"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty">
+
+                <com.production.monoprix.util.TextviewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="10sp"
+                    android:text="@string/fingerprint"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteensp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/relative_change_pass" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/image_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/relative_change_pass"
+                    app:theme="@style/Color1SwitchStyle" />
+
+
+            </RelativeLayout>
+
+            <com.production.monoprix.util.TextviewBold
+                android:id="@+id/txt_update"
+                android:layout_width="match_parent"
+                android:layout_height="44sp"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginEnd="@dimen/twenty"
+                android:layout_marginBottom="@dimen/thirty"
+                android:background="@drawable/red_rectangle_corner_back"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/update"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

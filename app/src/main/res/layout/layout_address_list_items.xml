@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layout_main_list_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginTop="@dimen/fifteen">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:clickable="false"
+                android:enabled="false"
+                android:theme="@style/RadioButton" />
+
+            <com.production.monoprix.util.TextviewSemiBold
+                android:id="@+id/txt_name_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/five"
+                android:layout_toLeftOf="@+id/button_edit_address_page"
+                android:layout_toRightOf="@+id/radioButton"
+                android:gravity="center_vertical"
+                android:maxLength="45"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
+
+            <com.production.monoprix.util.TextviewMedium
+                android:id="@+id/button_edit_address_page"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/twenty"
+                android:drawableEnd="@drawable/editaddress"
+                android:drawablePadding="@dimen/five"
+                android:gravity="center_vertical"
+                android:padding="@dimen/eight"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twelve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="@dimen/twenty_five"
+            android:layout_below="@id/rl"
+            android:layout_marginEnd="22sp"
+            android:id="@+id/rltwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_toLeftOf="@+id/tvdeladdress"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.production.monoprix.util.TextviewMedium
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/fifteen" />
+
+                <com.production.monoprix.util.TextviewMedium
+                    android:id="@+id/txt_mobileno_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/fifteen" />
+
+            </LinearLayout>
+
+            <com.production.monoprix.util.TextviewMedium
+                android:id="@+id/tvdeladdress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:drawableEnd="@drawable/deladdress"
+                android:drawablePadding="@dimen/five"
+                android:gravity="center_vertical"
+                android:padding="@dimen/eight"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rltwo"
+            android:layout_marginTop="@dimen/twelve"
+            android:background="@color/colorViewBorder" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

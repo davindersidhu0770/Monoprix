@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_rectangle_corner">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.production.monoprix.util.TextviewBold
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/eight"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twentysp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_st"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/fifteen"
+            android:textColor="@color/paycolor"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_point"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_margin="12dp"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/points"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/forteen" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/twelve"
+            android:background="@color/gray" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_five"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.production.monoprix.util.TextviewBold
+                android:id="@+id/txt_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/sixteensp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+
+            <com.production.monoprix.util.TextviewBold
+                android:id="@+id/tv_use_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/use_points"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/sixteensp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

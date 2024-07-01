@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <!--android:background="@drawable/trans1"-->
+   <!-- <androidx.cardview.widget.CardView
+            android:id="@+id/cv_msg"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="@dimen/margin_10"
+            android:layout_margin="@dimen/margin_4"
+            android:layout_centerVertical="true"
+
+            >-->
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/dialog_bg"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                >
+            <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="@string/dailog_title"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    />
+            <TextView
+                    android:id="@+id/tv_dsc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:gravity="center|top"
+                    android:text="@string/dailog_text"
+                    android:textSize="14dp"
+                    android:paddingTop="5dp"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_above="@+id/rl_okay"
+                    android:textStyle="normal"
+                    />
+            <RelativeLayout
+                    android:id="@+id/rl_okay"
+                    android:layout_height="45dp"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+
+                    >
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#4e4e4e"
+                        android:visibility="visible"
+                        android:layout_alignParentTop="true"/>
+                <Button
+                        android:id="@+id/yes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/dailog_ok"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                       android:background="@null"
+                        android:textAllCaps="false"
+                        />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    <!--</androidx.cardview.widget.CardView>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.production.monoprix.util.TextviewNormal
+                android:id="@+id/iagree_text2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="@dimen/twenty"
+                android:gravity="center_horizontal"
+                android:text="@string/iagree"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                 />
+
+        <com.production.monoprix.util.TextviewBold
+                android:id="@+id/txt_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginEnd="@dimen/twenty"
+                android:layout_marginBottom="@dimen/thirty"
+                android:background="@drawable/red_rectangle_corner_back"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:paddingStart="@dimen/forty"
+                android:paddingTop="@dimen/fifteen"
+                android:paddingEnd="@dimen/forty"
+                android:paddingBottom="@dimen/fifteen"
+                android:text="@string/register"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twentysp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iagree_text2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.production.monoprix.util.TextviewSemiBold
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty"
+            android:layout_marginTop="@dimen/twenty"
+            android:text="@string/hello1"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.production.monoprix.util.TextviewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty"
+            android:layout_marginTop="@dimen/ten"
+            android:text="@string/monoprixloyaltyprogram"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.production.monoprix.util.TextviewLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty"
+            android:layout_marginTop="@dimen/fifteen"
+            android:layout_marginEnd="@dimen/thirty"
+            android:text="@string/welcometomonoprix"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:nestedScrollingEnabled="false" />
+
+        <LinearLayout
+            android:id="@+id/right_lay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="6"
+            app:layout_constraintStart_toEndOf="@+id/home_recyclerview"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/thirty"
+                android:layout_marginEnd="@dimen/twenty"
+                android:src="@drawable/logo" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view_controller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="@dimen/ten"
+                android:background="@color/back_color">
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:visibility="visible"
+                    app:layout_constraintDimensionRatio="H,25:9"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/lay_zoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/ten"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <ImageView
+                        android:id="@+id/btn_mute"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_volume"
+                        android:tint="@color/red"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ImageView
+                        android:id="@+id/btn_full_screen"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:src="@drawable/ic_zoom"
+                        android:tint="@color/red"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </LinearLayout>
+
+                <!--
+                                        <FrameLayout
+                                            android:id="@+id/videoSurfaceContainer"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:visibility="visible"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:layout_constraintDimensionRatio="H,16:9" >
+
+                                            <SurfaceView
+                                                android:id="@+id/videoSurface"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                        </FrameLayout>
+                    -->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con_card"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="6"
+        app:layout_constraintStart_toEndOf="@+id/home_recyclerview"
+        app:layout_constraintTop_toBottomOf="@+id/right_lay">
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_st_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/mycard"
+            android:textColor="@color/red"
+            android:textSize="@dimen/twentythreesp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_lock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginTop="@dimen/twenty"
+            android:src="@drawable/ic_lock"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_st_card"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="VectorDrawableCompat" />
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_loyalty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/twenty"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/loyalty"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sixteensp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_st_card" />
+
+        <ImageView
+            android:id="@+id/img_loyalty"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="@dimen/twenty"
+            android:src="@drawable/dummy1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_loyalty" />
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_st_cag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/twenty"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/cag"
+            android:textColor="@color/red"
+            android:textSize="@dimen/twentythreesp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="6"
+            app:layout_constraintTop_toBottomOf="@+id/img_loyalty" />
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/twenty"
+            android:lineSpacingExtra="2sp"
+            android:text="0:00"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sixteensp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_st_cag"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

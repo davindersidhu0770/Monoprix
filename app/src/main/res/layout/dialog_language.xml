@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/back_color">
+
+    <com.production.monoprix.util.TextviewRegular
+        android:id="@+id/txt_delivery_slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty"
+        android:layout_marginTop="@dimen/twenty"
+        android:drawableStart="@drawable/ic_language"
+        android:drawablePadding="@dimen/fifteen"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/selang"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteensp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/closeArrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginEnd="@dimen/twenty"
+        android:tint="@color/theme"
+        android:src="@drawable/ic_arrow_up_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginEnd="5dp"
+        android:background="@color/view"
+        app:layout_constraintTop_toBottomOf="@id/txt_delivery_slot" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/c1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/view8">
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginTop="@dimen/sixteen"
+            android:layout_marginEnd="@dimen/twenty"
+            android:gravity="center_vertical"
+            android:text="@string/english"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/readio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sixteen"
+            android:layout_marginEnd="@dimen/twenty"
+            android:clickable="false"
+            android:theme="@style/RadioButtonblack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginEnd="5dp"
+            android:background="@color/view"
+            app:layout_constraintTop_toBottomOf="@id/readio_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/c2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/c1">
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_arbic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginTop="@dimen/sixteen"
+            android:layout_marginEnd="@dimen/twenty"
+            android:gravity="center_vertical"
+            android:text="@string/arabic"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <RadioButton
+            android:id="@+id/readio_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sixteen"
+            android:layout_marginEnd="@dimen/twenty"
+            android:clickable="false"
+            android:theme="@style/RadioButtonblack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginEnd="5dp"
+            android:background="@color/view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/readio_button1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

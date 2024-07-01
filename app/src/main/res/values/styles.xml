@@ -1,0 +1,137 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/poppinsregular</item>
+
+    </style>
+    <!-- res/values/styles.xml -->
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>    <!--text input layout-->
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+    <style name="TextLabelBlack" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/hintcolor</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorControlNormal">@color/hintcolor</item>
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+    <style name="MyDialogTheme1" parent="android:Theme.Dialog">
+        <!-- Fill the screen -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@drawable/trans1</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsFloating">false</item>
+       <!-- <item name="android:fontFamily" tools:ignore="NewApi">@font/lato_bold</item>-->
+        <!-- Just to prove it's working -->
+        <item name="android:background">@null</item>
+    </style>
+
+
+    <!--bottom navigation bar -->
+    <style name="navTextInactive">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/gray</item>
+
+    </style>
+
+    <style name="navTextActive">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/red</item>
+
+    </style>
+
+
+    <!--animation for bottom dialog-->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+
+    <style name="DialogAnimation1">
+        <item name="android:windowEnterAnimation">@anim/slide_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_left</item>
+    </style>
+
+    <!--dialog box from bottom-->
+    <style name="MyDialogTheme" parent="android:Theme.Dialog">
+        <!-- Fill the screen -->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="fontFamily">@font/poppinsregular</item>
+        <!-- Just to prove it's working -->
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <!--radio button-->
+    <style name="RadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/green</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textColorSecondary">@color/green</item>
+        <item name="colorControlNormal">@color/black</item>
+    </style>
+    <style name="RadioButtonred" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/white</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+    <style name="RadioButtonblack" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/theme</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="colorControlNormal">@color/black</item>
+    </style>
+
+    <style name="RadioThemeRed" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/theme</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textColorSecondary">@color/theme</item>
+        <item name="colorControlNormal">@color/theme</item>
+    </style>
+
+    <style name="textViewRegular" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/poppinsregular</item>
+    </style>
+    <style name="textViewMedium" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/poppinsmedium</item>
+    </style>
+    <style name="textViewSemiBold" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/poppinssemibold</item>
+    </style>
+    <style name="textViewBold" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/poppinsbold</item>
+    </style>
+
+    <style name="Color1SwitchStyle">
+        <item name="colorControlActivated">@color/green</item>
+    </style></resources>

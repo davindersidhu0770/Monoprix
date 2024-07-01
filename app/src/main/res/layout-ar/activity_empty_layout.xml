@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    <ImageView
+            android:id="@+id/empty_image"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="@dimen/forty"
+            android:src="@drawable/monoprix_cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_empty1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/emptylist"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twentysp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empty_image" />
+
+    <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_empty2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginEnd="@dimen/twenty"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6sp"
+            android:text="@string/emptylist2"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/fifteensp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_empty1" />
+
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_add_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="@dimen/thirty"
+            android:layout_marginBottom="@dimen/fifty_five"
+            android:background="@drawable/white_rectangle_corner_back"
+            android:gravity="center"
+            android:lineSpacingExtra="1sp"
+            android:paddingStart="@dimen/forty"
+            android:paddingTop="@dimen/ten"
+            android:paddingEnd="@dimen/forty"
+            android:paddingBottom="@dimen/ten"
+            android:text="@string/addproducts"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentysp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

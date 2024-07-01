@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginEnd="@dimen/twenty"
+                android:theme="@style/TextLabelBlack"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_familyname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty"
+                android:theme="@style/TextLabelBlack"
+                app:layout_constraintTop_toBottomOf="@+id/txt_input_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_familyname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_13sdp"
+
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty"
+
+                android:theme="@style/TextLabelBlack"
+                app:layout_constraintTop_toBottomOf="@+id/txt_input_familyname">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="text"
+                    android:textSize="@dimen/_13sdp"
+
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty"
+                android:theme="@style/TextLabelBlack"
+                app:layout_constraintTop_toBottomOf="@+id/txt_input_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobilenumber"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:textSize="@dimen/_13sdp"
+
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty"
+                android:theme="@style/TextLabelBlack"
+                app:layout_constraintTop_toBottomOf="@+id/txt_input_mobile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/msg"
+                    android:minLines="3"
+                    android:maxLines="6"
+                    android:textSize="@dimen/_13sdp"
+                    android:gravity="top|start"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.production.monoprix.util.TextviewSemiBold
+                android:id="@+id/txt_send"
+                android:layout_width="match_parent"
+                android:layout_height="44sp"
+                android:layout_marginStart="@dimen/forty"
+                android:layout_marginTop="@dimen/thirty"
+                android:layout_marginEnd="@dimen/forty"
+                android:layout_marginBottom="@dimen/thirty"
+                android:background="@drawable/red_rectangle_corner_back"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/send"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_input_msg" />
+
+            <com.production.monoprix.util.TextviewSemiBold
+                android:id="@+id/txt_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fifty"
+                android:lineSpacingExtra="10sp"
+                android:text="@string/contactus"
+                android:visibility="gone"
+                android:textColor="@color/theme"
+                android:textSize="@dimen/twelve"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_send" />
+
+            <com.production.monoprix.util.TextviewSemiBold
+                android:id="@+id/tvemail"
+                android:textColorHighlight="@color/theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:lineSpacingExtra="10sp"
+                android:text="@string/contactusinfo"
+                android:textColor="@color/theme"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_send" />
+
+            <com.production.monoprix.util.TextviewSemiBold
+                android:id="@+id/txt_social_st"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="10sp"
+                android:text="@string/onsocial"
+                android:textColor="@color/theme"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_call" />
+
+            <com.production.monoprix.util.TextviewBold
+                android:id="@+id/txt_social"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fifty"
+                android:layout_marginTop="@dimen/ten"
+                android:lineSpacingExtra="10sp"
+                android:text="@string/onsocial"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/fifteensp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_social_st" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:id="@+id/l1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginBottom="@dimen/thirty"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_social">
+
+                <ImageView
+                    android:id="@+id/fb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:id="@+id/twitter"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/twenty" />
+
+                <ImageView
+                    android:id="@+id/utube"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/twenty" />
+
+                <ImageView
+                    android:id="@+id/insta"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/twenty" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

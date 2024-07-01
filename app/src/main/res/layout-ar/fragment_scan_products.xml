@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_store_location"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_alignParentTop="true" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/store_location_nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_store_location"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/mainRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_store_location"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="0dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/linear_store_location_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_store_location"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/sixteensp">
+
+                <com.production.monoprix.util.TextviewSemiBold
+                    android:id="@+id/tvalert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twelve"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:paddingStart="@dimen/five"
+                    android:text="@string/this_feature_not"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <com.production.monoprix.util.TextviewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_loc"
+                    android:drawablePadding="@dimen/five"
+                    android:gravity="center_vertical"
+                    android:text="@string/label_you_are_at"
+                    android:layout_marginTop="@dimen/twelve"
+
+                    android:textColor="@color/red" />
+
+                <com.production.monoprix.util.TextviewSemiBold
+                    android:id="@+id/tv_store_location_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twelve"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:paddingStart="@dimen/five"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/forteen" />
+
+                <com.production.monoprix.util.TextviewBold
+                    android:id="@+id/tv_store_start_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="44sp"
+                    android:layout_marginStart="@dimen/twenty"
+                    android:layout_marginTop="@dimen/fifteen"
+                    android:layout_marginEnd="@dimen/twenty"
+                    android:background="@drawable/red_rectangle_corner_back"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="1sp"
+                    android:padding="@dimen/ten"
+                    android:text="@string/label_start_scanning"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/store_location_map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@id/linear_store_location_items" />
+
+            <!--  android:name="com.google.android.gms.maps.SupportMapFragment" -->
+            <com.production.monoprix.util.TextviewBold
+                android:id="@+id/tvhowitworks"
+                android:layout_width="match_parent"
+                android:layout_height="44sp"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/twenty"
+                android:background="@drawable/red_rectangle_corner_back"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="1sp"
+                android:padding="@dimen/ten"
+                android:text="@string/howscanandpayworks"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!--No Data-->
+    <com.production.monoprix.util.TextviewBold
+        android:id="@+id/tv_store_location_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/twelve"
+        android:gravity="center_vertical|center_horizontal"
+        android:maxLines="2"
+        android:padding="@dimen/sixteensp"
+        android:text="@string/label_no_store"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twenty"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

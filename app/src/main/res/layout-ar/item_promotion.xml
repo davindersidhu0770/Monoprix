@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content">
+
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_promo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteensp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:lineSpacingExtra="3sp"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:text="Surf excel easy wash"
+    />
+    <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_promo_desc"
+            app:layout_constraintTop_toBottomOf="@+id/txt_promo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/twelve"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="2sp"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginEnd="@dimen/twenty"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Easy wash detergent powder"
+    />
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_price"
+            app:layout_constraintTop_toBottomOf="@+id/txt_promo_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteensp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="3sp"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:text="QAR 165"
+    />
+
+    <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_price"
+            android:layout_marginTop="@dimen/twenty"
+            android:background="@color/view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

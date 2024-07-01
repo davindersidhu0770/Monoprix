@@ -1,0 +1,494 @@
+<resources>
+    <string name="dailog_title">يحذر</string>
+    <string name="dailog_text">يرجى المتابعة إلى عداد المسح والدفع المخصص</string>
+    <string name="dailog_ok">نعم</string>
+    <string name="dailog_home_delivery_text">يرجى تسليم الشراء إلى خدمة العملاء للتسليم</string>
+    <string name="verificationcode">رمز التحقق</string>
+    <string name="contactusinfo">اتصل بنا: info@monoprixqa.com</string>
+    <string name="nopromotionsavailable">No Promotions available right now</string>
+    <string name="dailog_update_qnty">الكمية المحدثة</string>
+    <string name="dailog_add_qnty">تمت إضافة العنصر إلى سلة التسوق</string>
+    <string name="product_is_already_scanned">تم فحص المنتج بالفعل</string>
+    <!-- <string name="visitstore">قم بزيارة المعرض او المتجر</string>-->
+    <string name="promotions">العروض</string>
+    <string name="scanpay">امسح وادفع</string>
+    <string name="mrestaurants">مطاعم</string>
+    <string name="qatar">Qatar</string>
+    <string name="faq">الأسئلة المتكررة</string>
+
+    <string name="stories">قصص</string>
+    <!--    <string name="visit">يزور</string>-->
+    <string name="storelocation">موقع المتجر</string>
+    <string name="mloyalty">مونوبري برنامج الولاء</string>
+
+    <!--    <string name="shop">التسوق</string>-->
+    <string name="shop">تسوق اونلاين</string>
+
+    <!--
+        <string name="rewards">المكافآت</string>
+    -->
+    <string name="rewards">My Loyalty</string>
+
+    <string name="privacypolicy">سياسية الخصوصية</string>
+    <string name="termsandconditions">الشروط والاحكام</string>
+    <string name="help">مساعدة</string>
+    <string name="howdoesitworks">كيف تعمل؟</string>
+    <string name="monoprixcaps">مونوبري </string>
+    <string name="dob">تاريخ الميلاد</string>
+    <string name="select_country">البلد</string>
+
+  <!--  <string name="facebook_app_id">681445183736523</string>
+    <string name="fb_login_protocol_scheme">fb681445183736523</string>
+-->
+
+    <!--    <string name="inspirationawaits">الإلهام ينتظر</string>-->
+    <string name="monoprixloyaltyprogram">مونوبري برنامج الولاء</string>
+    <string name="jointhemonoprixfamily">انضم إلى عائلة Monoprix وابدأ في كسب النقود على كل عملية شراء </string>
+    <string name="welcometomonoprix">نرحب بك الى عائلة مونوبري! أستمتع بالتسوق وأكسب نقدي</string>
+
+    <!--
+        <string name="explore">استكشف المتجر ، واقرأ وتسوق من باب واحد ، مليون مسار - ابدأ طريقك من هنا </string>
+    -->
+    <!--    <string name="explore">Discover a new journey of saving with Monoprix loyalty program.</string>-->
+    <!--
+        <string name="myrewards">مكافآتي</string>
+    -->
+    <string name="mcashrewards">مكافات نقدية’  M</string>
+
+    <string name="myrewards">مونوبري برنامج الولاء</string>
+    <string name="mloyaltyprogram">مونوبري برنامج الولاء</string>
+    <string name="start">Start</string>
+    <string name="_974_qatar">974 (Qatar) </string>
+    <!--<string name="client_id">85a25f70361e46d3be208b368b1d41ca</string>-->
+    <string name="client_id">2185019721628432</string>
+    <string name="redirect_url">https://instagram.com/</string>
+    <string name="base_url">https://api.instagram.com/</string>
+    <string name="get_user_info_url">https://api.instagram.com/v1/users/self/?access_token=</string>
+  <!--  <string name="twitter_api_key">UxgyTKSqB1SM60RohQ566eqkN</string>
+    <string name="twitter_secret_key">Pr4YZwVkOffxVMDnW1ONoA36WPyWJtOYVm62J9rLMkXvqXwCzk</string>-->
+    <string name="app_name">مونوبري قطر – M’ Loyalty</string>
+    <string name="please_fill_allthedetails">Please fill all the details to continue.</string>
+
+    <!--
+        <string name="appname">مونوبريكس</string>
+    -->
+    <string name="downloaded_at">تم التنزيل في:</string>
+    <string name="something_went_wrong">حدث خطأ ما. الملف تالف.</string>
+    <string name="server_error">الخادم غير متاح. الرجاء المحاولة لاحقا</string>
+    <string name="no_internet">لا يوجد إتصال بالانترنات</string>
+    <string name="allfieldsreq">كل الحقول اجبارية</string>
+
+    <!--    <string name="this_feature_not">هذه الميزة متوفرة فقط في متجر مشيرب الخاص بنا</string>-->
+    <string name="this_feature_not">متوفر فقط في متجر Monoprix في مشيرب</string>
+    <string name="howscanandpayworks">كيف يعمل</string>
+
+    <string name="generic_no_internet_desc">عفوا...لا يبدو أن  لديك اتصال مناسب للإنترنات. يرجى المحولة لاحقا بعد التثبت من اتصالك بشبكة أنترنيت فعالة</string>
+    <!--<string name="api_key">AIzaSyAeB4reCznsrXNU5JJtqkiHyeNUp7g7OLU</string>-->
+    <string name="api_key">AIzaSyB3-bOOe4-hHhpv8XEHZtoILu4zGWNMzAQ</string>
+    <!--login-->
+    <!--    <string name="signin">التوقيع / التسجيل</string>-->
+    <string name="signin">تسجيل الدخول</string>
+    <string name="headertxt"> التطبيق الخاص بك مونوبري ونحن طورنا</string>
+    <string name="crmyacc">إنشيء حسابي</string>
+    <string name="alerdy">لدي حساب بالفعل</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمه السر</string>
+    <string name="forgot">نسيت كلمة السر الخاصة بك؟</string>
+    <string name="scanandpay">امسح وادفع</string>
+    <string name="dummytext">simply dummy text of the printing and typesetting industry. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="or">أو</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="stayloo">ابق متصلا</string>
+    <string name="connect">تواصل مع تطبيق الوسائط الاجتماعية الخاص بك</string>
+    <!--registration-->
+    <string name="landmark">معلم معروف</string>
+
+    <string name="registration">التسجيل</string>
+    <string name="mr">السيد</string>
+    <string name="mrs">السيدة</string>
+    <string name="ms">الانسة</string>
+    <string name="name">الإسم</string>
+    <string name="familyname">اسم العائلة</string>
+    <string name="countrycode">رقم البلد</string>
+    <string name="scountrycode">رقم البلد</string>
+    <string name="mobilenumber">رقم الهاتف المحمول</string>
+    <string name="mobile_txt">المحمول</string>
+    <string name="street_txt">شارع</string>
+    <string name="zone_txt">رقم المنطقة</string>
+    <string name="nearme_Landmark_txt">معلم قريب</string>
+    <string name="building_txt">مبنى</string>
+    <string name="house_no_txt">رقم المنزل.</string>
+    <string name="loyaltynumber">Loyalty Number</string>
+    <string name="confirmpassword">تأكيد كلمة المرور</string>
+    <string name="iconfirm">أؤكد أنني أبلغ من العمر 18 عامًا أو أكبر</string>
+
+    <string name="iagree">لقد قرأت توافق على</string>
+    <string name="iterms">شروط الخدمة</string>
+    <string name="iagree1"> شروط الخدمةشروط الخدمة شروط الخدمة</string>
+    <string name="register">تسجيل</string>
+    <string name="already">هل لديك حساب ؟
+        <font color="#000">تسجيل الدخول</font>
+    </string>
+    <string name="createaccount">إصنع حساب</string>
+
+    <string name="minimumlen"> يجب ألا يقل طول كلمة المرور عن 6 أرقام.</string>
+    <string name="secoun">الرجاء إختيار البلد</string>
+    <!--otp-->
+    <string name="enterotp">ادخل الرمز</string>
+    <string name="otpon">لقد أرسلنا رمز التحقق على رقمك</string>
+    <string name="resendotp">إعادة إرسال  رمز التحقق</string>
+    <string name="verify">التحقق</string>
+    <string name="otpheader">التحقق</string>
+    <!--forgot password-->
+    <string name="forgotpass">هل نسيت كلمة المرور؟</string>
+    <string name="fortxt">نحن فقط بحاجة إلى تسجيل البريد الإلكتروني المسجل الخاص بك لنرسل لك تعليمات إعادة تعيين كلمة السر</string>
+    <string name="resetpass">إعادة تعيين كلمة المرور</string>
+    <string name="emailphone">البريد الالكتروني / الهاتف</string>
+    <string name="otp">OTP
+        <font color="#D81B60">*</font>
+    </string>
+    <string name="dontreceive">لم تستلم OTP؟إعادة إرسال  رمز التحقق</string>
+    <string name="otpon1">لقد أرسلنا رمز التحقق على رقمك</string>
+    <!--social sigin in-->
+    <string name="social_header">يرجى ملء التفاصيت أدناه لإكمال عملية التسجيل</string>
+    <string name="continuet">استمر</string>
+    <string name="e_google_sign_in">فشل تسجيل الدخول إلى جوجل</string>
+    <!--home-->
+    <string name="home_st">مونوبري</string>
+    <string name="en">أنجليزي</string>
+    <string name="myshopping">قائمة التسوق</string>
+    <string name="measy">تسوق اونلاين</string>
+    <!--    <string name="measy">عروض مونوبري</string>-->
+    <string name="location">موقع</string>
+    <!--
+        <string name="itworks">كيف تعمل؟</string>
+    -->
+    <string name="itworks">How it work?</string>
+    <string name="mymonoprix">ابدأ رحلتي السهلة مع مونوبري</string>
+    <string name="mycard">شكرا</string>
+    <string name="loyalty">وفاء</string>
+    <string name="cag">MA CAGNOTTE</string>
+    <string name="selang">اختار اللغة</string>
+    <string name="english">English</string>
+    <!-- <string name="english">الإنجليزية</string>-->
+    <string name="arabic">عربى</string>
+    <!--bottom navigation bar-->
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="shlist">قائمة التسوق</string>
+    <string name="scanproduct">مسح المنتجات</string>
+    <string name="loyalbalance">رصيد شكرا</string>
+    <string name="loyal_point">نقاط الولاء</string>
+    <string name="loyal_qar">الولاء ريال قطري</string>
+    <string name="redeem">يسترد</string>
+    <string name="lp_pre_msg">You have</string>
+    <string name="lp_post_msg">Loyalty points. Enter the points you wish to redeem</string>
+    <string name="loyal_points">نقاط الولاء</string>
+    <string name="points">نقاط</string>
+    <string name="use_points">يسترد</string>
+    <string name="email_send">إرسال طلبك لتسجيل هذا الجهاز بنجاح إلى Monoprix Qatar. ستتلقى تأكيدًا عبر البريد الإلكتروني بمجرد الموافقة على الجهاز.</string>
+    <!--loyalty-->
+    <string name="myloyalty">حسابى شكرا</string>
+    <string name="cardnumber">رقم عربة التسوق</string>
+    <string name="displaymycard">الشروط والاحكام</string>
+    <string name="currency">QAR 0.00</string>
+    <string name="Loyalty_currency">0.00 QR</string>
+    <!--navigation drawer-->
+    <!--<string name="benefits">الفوائد</string>-->
+    <string name="benefits">امتيازات برنامج الولاء</string>
+
+    <string name="myapp">طلبي: كيف يعمل؟</string>
+    <string name="logout">الخروج</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="mydeli">عنوان التسليم</string>
+    <string name="mypro">تسوق عبر الإنترنت</string>
+    <!--    <string name="mypro">عروضي</string>-->
+    <string name="mymono">بطاقة مونوبري الخاصة بي</string>
+    <string name="oursh">محلنا</string>
+    <string name="shoppinghistory">تاريخ التسوق</string>
+    <string name="hello">مرحبا</string>
+    <string name="hellowithntag">مرحبا\n</string>
+
+    <string name="hello1">مرحبا!</string>
+    <string name="version"> النسخة:</string>
+    <!--shop list-->
+    <string name="emptylist">قائمتك فارغة</string>
+    <string name="emptylist2">أضف منتجات إلى قائمة التسوق الخاصة بك ابحث عليها في مونوبرى</string>
+    <string name="addproducts">أضف منتجات</string>
+    <string name="checkout">باشرالخروج</string>
+    <string name="yousave"> أحفظ</string>
+    <string name="areyou">هل أنت متأكد؟</string>
+    <string name="doyou">هل تريد حقًا حذف هذه السجلات؟لا يمكن التراجع عن هذه العملية</string>
+    <string name="cancel"> حذف</string>
+    <string name="delete">إلغاء</string>
+    <string name="confirm">يتأكد</string>
+    <string name="deletemy">حذف قائمتي</string>
+    <string name="shoplist1">أضف قائمة التسوق الخاصة بي</string>
+    <string name="shoplist2">حذف قائمتي</string>
+    <string name="shoplist3">تحديث قائمتي</string>
+
+    <!--scanner-->
+    <string name="txt_enter_barcode">أدخل الباركود</string>
+    <string name="model_qr_price">QAR 00.00</string>
+    <string name="lable_cart_total">مجموع العربة</string>
+    <string name="txt_no_data">لا تتوفر أي بيانات</string>
+    <string name="txt_no_data_desc">عفوا, لا يوجد بيانات متاحة للعرض</string>
+    <string name="lable_proceedpay">باشرالخروج</string>
+
+    <string name="lable_info">Info</string>
+    <string name="txt_alert">إنذار</string>
+    <string name="txt_alert_desc">العناصر المضافة بالفعل إلى بطاقتك ، هل تريد زيادة كمية هذا العنصر؟</string>
+    <string name="txt_yes">نعم</string>
+    <string name="txt_no">لا</string>
+    <string name="lable_soldout">بيعت كلها</string>
+    <string name="txt_qr">QR</string>
+    <string name="txt_you_save_qr"> أحفظ</string>
+    <string name="turnon">Please turn on GPS to access your current location</string>
+
+    <!--checkout-->
+    <string name="moreitems">المزيد من العناصر</string>
+    <string name="less_item">إظهار عناصر أقل</string>
+    <string name="seldeliverytype">حدد نوع التسليم</string>
+    <string name="takeaway">خارجى</string>
+    <string name="homedelivery">توصيل منزلي</string>
+    <string name="ordersummary">ملخص الطلب</string>
+    <string name="subtotal">المجموع الفرعي</string>
+    <string name="payableamount">المبلغ المستحق</string>
+    <string name="procedtopaymnent">الشروع في دفع</string>
+    <string name="checkout_ti">الدفع</string>
+    <string name="sdeliveryslot">حدد فتحة التسليم</string>
+    <string name="changeaddress">+ تغيير أو إضافة عنوان</string>
+    <string name="sel_address">حدد العنوان</string>
+    <string name="mobile">التليفون المحمول :</string>
+
+    <!--payment-->
+    <string name="paymethod">طريقة الدفع او السداد</string>
+    <string name="cash">نقدي</string>
+    <string name="cc">بطاقة الائتمان</string>
+    <string name="bank_card">بطاقة مصرفية</string>
+    <string name="credit_card">بطاقة إئتمان</string>
+    <string name="paypal">أمريكان اكسبريس</string>
+    <string name="dc">بطاقة ائتمان</string>
+    <string name="choosepay">اختيار الدفع</string>
+    <string name="paynow">ادفع الآن</string>
+    <string name="change">  تغيير</string>
+    <string name="payment">دفع</string>
+    <string name="payment_cc">الدفع ببطاقة الائتمان</string>
+    <string name="payment_dc">الدفع ببطاقة الخصم</string>
+    <string name="shippingaddress">عنوان الشحن</string>
+    <string name="paymentcomplete">تم الانتهاء من الدفع بنجاح</string>
+    <string name="orderid">رقم التعريف الخاص بالطلب</string>
+    <string name="orderamount">كمية الطلب</string>
+    <string name="confemail">تم إرسال بريد إلكتروني للتأكيد إلى</string>
+    <string name="continueshop">مواصلة التسوق</string>
+    <string name="confirmation">التأكيد</string>
+    <string name="paymentfailure">فشل عملية الدفع</string>
+    <string name="paymenterror">هناك خطأ أثناء كتابة البيانات</string>
+    <string name="paymentdone">تم الدفع؟</string>
+
+
+    <!--update-->
+    <string name="update">تحديث</string>
+    <string name="fingerprint">مصادقة البصمة</string>
+    <string name="myaccount">حسابي الشخصي</string>
+
+    <!--change password-->
+    <string name="cp">كلمة المرور الحالي
+        <font color="#D81B60">*</font></string>
+    <string name="np">كلمة السر الجديدة
+        <font color="#D81B60">*</font></string>
+    <string name="cnp">تأكيد كلمة المرور الجديدة
+        <font color="#D81B60">*</font></string>
+    <string name="chnagepassword">غير كلمة السر</string>
+
+    <string name="pa">المبلغ المدفوع</string>
+    <string name="noorder">ليس هناك طلبات</string>
+
+    <string name="msg">رسالتي</string>
+    <string name="send">ارسل</string>
+    <string name="bytele">عن طريق الهاتف - مركز الاتصال</string>
+    <string name="onsocial">على الشبكات الاجتماعية</string>
+    <string name="contactus">تواصل معنا</string>
+
+    <!--fingerprint-->
+    <string name="authen">المصادقة</string>
+    <string name="finger">أدخل بصمة إصبعك لتسجيل الدخول</string>
+    <string name="validnotreconized">لم يتم التعرف على البصمة</string>
+
+    <!-- steps-->
+    <string name="key_info_point_one">مونوبري الخطوة 1: مرحبًا بكم في  </string>
+    <string name="key_info_point_two">مونوبري الخطوة 1: مرحبًا بكم في  </string>
+
+    <string name="filterby">Filter by</string>
+    <string name="allmyc">All My Coupons</string>
+    <string name="s_how_it">هذا الخيار موجود فقط في متجر مونوبري غاليريا مول مشيرب</string>
+    <string name="login_alert">حسابك غير مسجل بهذا الجهاز. يرجى الاتصال بمونوبري قطر للتسجيل.</string>
+    <string name="register_device">جهاز تسجيل</string>
+    <string name="alert">انذار</string>
+    <string name="how1">ابدأ رحلة مونوبري بسهولة عن طريق مسح منتجاتك</string>
+    <string name="how2">حدد ما إذا كنت تريد أن يتم تسليمها أو التقاط العناصر الخاصة بك
+</string>
+    <string name="how3">الدفع مباشرة ن ريق التطبيق।</string><!--  أدفع مباشرة من خلال التطبيق أو أذهب إلى حساب مونوبري النقدي السهل  -->
+
+
+    <!--login dialog box-->
+    <string name="sign_in_required">Sign-in Required</string>
+    <string name="alert_address">You are not signed-in, please sign-in to view your address</string>
+    <string name="alert_shoplist">لم تسجل الدخول ، الرجاء تسجيل الدخول لعرض قائمة المنتجات الخاصة بك</string>
+    <string name="alert_easy_journey">لم تسجل الدخول ، يرجى تسجيل الدخول لبدء رحلتك السهلة في لعبة monoprix</string>
+
+    <!--error txt-->
+    <string name="er_email">الرجاء إدخال البريد الإلكتروني</string>
+    <string name="er_password">الرجاء إدخال الرقم السري</string>
+    <string name="er_name">الرجاء إدخال اسم صالح</string>
+    <string name="er_valid_name">الرجاء إدخال بريد  الإسم</string>
+    <string name="er_familyname">الرجاء إدخال إسم العائلة</string>
+    <string name="er_countrycode">الرجاء إختيار البلد</string>
+    <string name="er_mobile">الرجاء إدخال رقم الهاتف الجوال</string>
+    <string name="er_inv_email">الرجاء إدخال بريد إلكتروني فعال</string>
+    <string name="er_inv_number">الرجاء إدخال رقم هاتف جوال فعال</string>
+    <string name="er_loyalty_number">Please enter loyalty number</string>
+    <string name="er_con_password">الرجاء إدخال تأكيد الرقم السري</string>
+    <string name="er_confirm">الرجاء التأكيد بأن عمري 18 سنة أو أكثر</string>
+    <string name="er_agree">الرجاء التأكيد بأني إطلعت و وافقت على شروط الخدمة</string>
+    <string name="er_gender">الرجاء إختيار الإسم</string>
+    <string name="et_up_password">الرقم السري و الرقم السري للتأكيد يجب أن يكون نفسه</string>
+    <string name="er_otp">يرجى إدخال OTP</string>
+    <string name="et_deliverytype">الرجاء إختيار طريقة التوصيل</string>
+    <string name="er_addre_type">الرجاء إختيارنوع العنوان</string>
+    <string name="er_delivery_slot">الرجاء إختيار فتحة التسليم</string>
+    <string name="er_payment">الرجاء إختيارالدفع</string>
+    <string name="er_address">الرجاء إضافة العنوان</string>
+    <string name="er_op">الرجاء إدخال الرقم السري الحالي</string>
+    <string name="er_np">الرجاء إدخال الرقم السري الجديد</string>
+    <string name="er_cnp">الرجاء إدخال الرقم السري للتأكيد</string>
+    <string name="er_match">الرقم السري الجديد و الرقم السري للتأكيد يجب أن يكون نفسه</string>
+    <string name="er_msg">الرجاء إدخال رسالة</string>
+    <string name="er_postal_code">الرجاء إدخال رمز البريد</string>
+    <string name="er_address1">الرجاء إدخال العنوان</string>
+    <string name="er_loyalty">لا رصيد الولاء</string>
+    <string name="er_email_phone">الرجاء إدخال معرف البريد الإلكتروني أو رقم الهاتف
+</string>
+
+    <!--Add New Address-->
+    <string name="hint_address">رقم الشارع / المنطقة</string>
+    <string name="hint_postal_code">الرمز البريدي</string>
+    <string name="hint_country">بلد</string>
+    <string name="label_save_continue">وفر واستمر</string>
+    <string name="locateme">تحديد موقع لي</string>
+    <string name="label_home">الصفحة الرئيسية</string>
+    <string name="label_office">مكتب.</string>
+    <string name="label_other">آخر</string>
+    <string name="setdefault">تعيين العنوان الإفتراضي</string>
+    <string name="editaddress">تعديل العنوان</string>
+    <string name="slectcity">المدينة</string>
+    <!--
+        <string name="selectarea">إخترالمنطقة</string>
+    -->
+    <string name="phone_number_length">Your Phone Number length should be 8 digits.</string>
+    <string name="password_length_shouldbe_6digit">الرقم السري يجب ان لا يقل عن 6 أرقام.</string>
+
+    <string name="selectplace">حدد المنطقة</string>
+    <string name="selectarea">المساحة/المنطقة</string>
+    <string name="er_inv_area">الرجاء تحديد منطقتك</string>
+    <string name="municipality">البلدية</string>
+    <string name="places">المكان</string>
+    <string name="selectzone">حدد المنطقة</string>
+    <string name="please_selectyourhomecountry">Please select your Home Country</string>
+    <string name="westbay">الخليج الغربي</string>
+    <string name="aijasra">الجسرة</string>
+    <string name="thepearl">اللؤلؤة</string>
+    <string name="albaaye">البياع</string>
+    <string name="oldairport">المطار القديم</string>
+    <string name="dohaport">ميناء الدوحة</string>
+    <string name="lusail">الوسيل</string>
+    <string name="diplomaticarea">المنطقة الدبلوماسية</string>
+    <string name="enter_lastname">Please enter Last Name</string>
+
+    <string name="doha">الدوحة</string>
+    <string name="al_rayan">الريان</string>
+    <string name="al_daayen">الظعاين</string>
+    <string name="umm_salal">أم صلال</string>
+    <string name="al_shani">الشحانية</string>
+    <string name="al_khor">الخور</string>
+    <string name="al_shamal">الشمال</string>
+    <string name="al_wakra">الوكرة</string>
+
+
+    <!--Address List-->
+    <string name="label_edit">   تصحيح</string>
+    <string name="label_add_new_address"> إضافة عنوان التسليم الخاص بي</string>
+    <string name="label_no_address">لم يتم العثور على عنوان, أضف عنوان جديد للمواصلة</string>
+    <string name="addaddress">اضف عنوان</string>
+    <string name="addresslist">قائمة العناوين</string>
+    <string name="iems">العناصر:</string>
+    <string name="item">بند:</string>
+
+    <!--Store Location-->
+    <string name="label_you_are_at">:انت عند</string>
+    <string name="label_start_scanning">بدء المسح</string>
+    <string name="label_no_store">لا يوجد متجر متاح</string>
+    <string name="shoptiming">توقيت المحل:</string>
+
+    <!--info-->
+    <string name="infoheading">كيف تعمل</string>
+    <string name="infodesc">
+        1.\u0020   مسح منتجاتك\n \n \n
+        2.\u0020   حدد الوجبات الجاهزة أو خيار التسليم\n \n \n
+        3.\u0020  ادفع في التطبيق</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="erorretry">حدث خطأ ما نحن عليه من فضلك أعد المحاولة</string>
+    <!--barcode dialogbox-->
+    <string name="er_barcode">تحتوي سلة التسوق على منتجات من متجر آخر لمتابعة هذا المتجر الذي تريد حذف سلة التسوق الخاصة بك؟</string>
+    <string name="ok">حسنا</string>
+    <string name="updatejust">An update has just been downloaded.</string>
+    <string name="restart">RESTART</string>
+    <string name="er_cart_empty">عربة التسوق فارغة</string>
+    <string name="er_cart_empty1">مسح الباركود البند لإضافة إلى العربة</string>
+    <!--firebase update-->
+    <string name="updateavail">التحديث متاح</string>
+    <string name="update_avail">تحديث</string>
+    <string name="skip">تخطى</string>
+    <string name="deleteaccount">مسح المستخدم</string>
+    <string name="notificationmessage">قد تتضمن الإشعارات تنبيهات وصوتًا وشارة رمز. ويمكن تهيئتها في الإعدادات</string>
+    <string name="allow">امسح</string>
+
+    <string name="free">مجانا</string>
+    <string name="qantity">كمية:</string>
+    <string name="ourstore">متاجرنا</string>
+    <string name="notificationtitle">مونوبري قطر - برنامج الولاء يرغب في إرسال إشعارات</string>
+
+    <string name="fetchotp">تحاول جلب مكتب المدعي العام</string>
+    <string name="Qatarcurrency">ريال</string>
+    <string name="weight">وزن</string>
+    <string name="er_logout"> هل أنت متأكد من تسجيل الخروج؟</string>
+    <string name="msg_fingerprint">هل أنت متأكد من رغبتك</string>
+    <string name="del_msg">هل تريد إزالة هذا العنصر من سلة التسوق الخاصة بك؟</string>
+    <string name="home_delivery_er">خدمة التوصيل إلى المنازل متوفرة للطلبات التي تزيد عن 99 ريال قطري.</string>
+    <string name="payment_txt">طريقة الدفع :</string>
+    <string name="address_lbl">عنوان :</string>
+    <string name="loyality_txt">حساب الولاء QR مخصص حصريًا لموظفي علي بن علي</string>
+    <string name="re_order">إعادة ترتيب</string>
+
+    <string name="direction">الاتجاهات</string>
+    <string name="write_shopping_list">يمكنك كتابة قائمة التسوق الخاصة بك.</string>
+    <string name="save_shopping_list">تم حفظ قائمة التسوق الخاصة بك.</string>
+    <string name="submit">إرسال</string>
+    <string name="selected_slot">خانة التسليم المحددة للتسليم غدًا.</string>
+
+    <string name="Please_valid_points">الرجاء إدخال نقاط صالحة.</string>
+    <string name="plz_enter_min_redeem_point">يجب أن يكون الحد الأدنى لمبلغ الاسترداد 1 ريال قطري.</string>
+    <string name="enough_points">ليس لديك نقاط كافية لاسترداد هذا الطلب.</string>
+    <string name="actual_QAR">الرجاء إدخال ريال قطري الفعلي ليتم استبداله.</string>
+    <string name="country">Country</string>
+    <string name="please_select_birthcountry">الرجاء تحديد بلد ميلادك</string>
+    <string name="buildingnumber">رقم البناء - </string>
+    <string name="er_zoneno">يرجى تحديد رقم المنطقة بين 1 إلى 155</string>
+    <string name="lable_add_to_shopping_list">أضف إلى قائمة التسوق</string>
+    <string name="countryName">حدد الدولة</string>
+    <string name="er_dob">الرجاء ادخال تاريخ ميلادك</string>
+    <string name="last_name">الكنية</string>
+<!--    <string name="del_user">مسح المستخدم</string>-->
+    <string name="welcometotheMono">مرحبًا بكم في عائلة مونوبري! سيتم تفعيل حساب مكافأة الولاء الخاص بك خلال 24 ساعة</string>
+
+</resources>

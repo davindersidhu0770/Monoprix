@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_color">
+
+    <include
+            android:id="@+id/include"
+            layout="@layout/include_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/order_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include"
+            android:layout_marginTop="@dimen/ten" />
+
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_no_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="@dimen/fifteen"
+            android:text="@string/noorder"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twenty"
+            android:visibility="gone" />
+
+</RelativeLayout>

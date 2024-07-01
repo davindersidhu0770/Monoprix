@@ -1,0 +1,493 @@
+<resources>
+
+    <string name="dailog_title">Alert</string>
+    <string name="dailog_text">Please proceed to dedicated Scan &amp; Pay counter</string>
+    <string name="dailog_ok">Ok</string>
+    <string name="dailog_update_qnty">Quantity Updated</string>
+    <string name="dailog_add_qnty">Item added to cart</string>
+
+    <string name="dailog_home_delivery_text">Please handover purchase to customer service for delivery</string>
+
+    <string name="facebook_app_id" translatable="false">681445183736523</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb681445183736523</string>
+    <string name="facebook_client_token" translatable="false">d768cf312a027a08f868bbfd0e0b508e</string>
+
+    <!-- <string name="facebook_app_id">1529436057391531</string>
+     <string name="fb_login_protocol_scheme">fb1529436057391531</string>-->
+    <!-- <string name="client_id">85a25f70361e46d3be208b368b1d41ca</string>-->
+    <!--<string name="client_id">616089685768982</string>-->
+    <string name="client_id">2185019721628432</string>
+
+    <string name="redirect_url">https://instagram.com/</string>
+    <string name="base_url">https://api.instagram.com/</string>
+    <string name="get_user_info_url">https://api.instagram.com/v1/users/self/?access_token=</string>
+    <!--   <string name="twitter_api_key">virkWwQyHHYWONZGtsWIHGVyD</string>
+       <string  name="twitter_secret_key">hYbj9jkvghy8zLPAtmo5irCuIgeQiB4xkfYz1QIY5j2bdl3khu</string>-->
+    <!--
+        <string name="twitter_api_key" translatable="false">UxgyTKSqB1SM60RohQ566eqkN</string>
+    -->
+    <string name="twitter_api_key" translatable="false">sUoPrz3nkLBGLYDdvMRKfR9Mj</string>
+    <!--
+        <string name="twitter_secret_key" translatable="false">Pr4YZwVkOffxVMDnW1ONoA36WPyWJtOYVm62J9rLMkXvqXwCzk</string>
+    -->
+    <string name="twitter_secret_key" translatable="false">V65D5wNQIGpiyVk3qwTuLTf8PBErBiN6l2N5xZ0R7I6eCbUUhS</string>
+    <string name="app_name">Monoprix Qatar – M’ Loyalty</string>
+    <string name="downloaded_at">Downloaded at: </string>
+    <string name="something_went_wrong">something went wrong. file is corrupted.</string>
+    <string name="server_error">Server is not available. Try again after sometime</string>
+    <string name="no_internet">No Internet Connection</string>
+    <!--    <string name="this_feature_not">This feature is available only from our Msheireb store</string>-->
+    <string name="this_feature_not">Only available at Monoprix, Msheireb store.</string>
+    <string name="product_is_already_scanned">Product already scanned.</string>
+    <string name="howscanandpayworks">How Scan &amp; Pay Works</string>
+    <string name="generic_no_internet_desc">Oops...You do not seem to have a proper internet connection. Please try again after connecting to a valid internet connection
+    </string>
+    <!--   <string name="api_key">AIzaSyAeB4reCznsrXNU5JJtqkiHyeNUp7g7OLU</string>-->
+    <!--    <string name="api_key">AIzaSyATOpYJw_1f86Mv6J0u16nwvAZHHyfxRhE</string>-->
+    <!--    <string name="api_key">AIzaSyB3-bOOe4-hHhpv8XEHZtoILu4zGWNMzAQ</string>-->
+    <string name="api_key">AIzaSyD6NmhuUMTS-GG7UlkM_GOgtXflvOlt2GY</string>
+
+    <!--login-->
+    <!--    <string name="signin">Sign in/Registration</string>-->
+    <string name="signin">Sign in</string>
+    <string name="allfieldsreq">All fields required</string>
+    <string name="headertxt">Your application monoprix and me</string>
+    <string name="crmyacc">CREATE MY ACCOUNT</string>
+    <string name="alerdy">I already have an account</string>
+    <string name="email">Email Id</string>
+    <string name="dob">Date of Birth</string>
+    <string name="password">Password</string>
+    <string name="forgot">Forgot your password?</string>
+    <string name="scanandpay">SCAN &amp; PAY</string>
+    <string name="scanpay">Scan &amp; Pay</string>
+    <string name="mrestaurants">M Restaurants</string>
+    <string name="dummytext">simply dummy text of the printing and typesetting industry. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="termsandconditions">Terms &amp; Conditions</string>
+    <string name="or">or</string>
+    <string name="help">Help</string>
+    <string name="login">LOGIN</string>
+    <string name="stayloo">Stay logged In</string>
+    <string name="connect">Connect with your Social Media application</string>
+    <!--registration-->
+    <string name="registration">Registration</string>
+    <string name="mr">Mr</string>
+    <string name="mrs">Mrs</string>
+    <string name="ms">Ms</string>
+    <string name="name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="familyname">Family Name</string>
+    <string name="countrycode">Country Code</string>
+    <string name="scountrycode">Country Code</string>
+    <string name="countryName">Select Country</string>
+    <string name="mobilenumber">Mobile Number</string>
+    <string name="mobile_txt">Mobile</string>
+    <string name="municipality">Municipality</string>
+    <string name="street_txt">Street</string>
+    <string name="landmark">Landmark</string>
+    <string name="zone_txt">Zone No.</string>
+    <string name="selectzone">Select Zone No.</string>
+    <string name="nearme_Landmark_txt">Nearby Landmark</string>
+    <string name="building_txt">Building</string>
+    <string name="buildingnumber">Building No - </string>
+    <string name="house_no_txt">House no.</string>
+    <string name="please_selectyourhomecountry">Please select your Home Country</string>
+    <string name="loyaltynumber">Loyalty Number</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="iconfirm">I confirm that I am 18 years old or above</string>
+    <string name="confirm">Confirm</string>
+    <string name="iagree">I have read &amp; agree to the</string>
+    <string name="iterms">terms &amp; conditions</string>
+    <string name="faq">FAQ</string>
+    <string name="iagree1">I have read &amp; agree to the terms &amp; conditions</string>
+    <string name="register">Register</string>
+    <string name="createaccount">CREATE ACCOUNT</string>
+    <string name="already">Already have an account? SIGN IN</string>
+    <string name="minimumlen">Your password minimum length should be 6</string>
+    <string name="phone_number_length">Your Phone Number length should be 8 digits.</string>
+    <string name="secoun">Select Country</string>
+    <!--otp-->
+    <string name="enterotp">Enter OTP</string>
+    <string name="verificationcode">VERIFICATION CODE</string>
+    <string name="otpon">We have sent an OTP on your number</string>
+    <string name="resendotp">Resend OTP</string>
+    <string name="verify">Verify</string>
+    <string name="otpheader">Verify Account</string>
+    <!--forgot password-->
+    <string name="forgotpass">Forgot Your Password?</string>
+    <string name="fortxt">We just need your registered email Id / phone number to send you password reset instructions.</string>
+    <string name="resetpass">RESET PASSWORD</string>
+    <string name="emailphone">Email/Phone Number</string>
+    <string name="otp">OTP
+        <font color="#D81B60">*</font>
+    </string>
+    <string name="dontreceive">Didn\'t received the OTP? <u>Resend OTP</u></string>
+    <string name="otpon1">We have sent an OTP on</string>
+    <!--social sigin in-->
+    <string name="social_header">Please fill below details to complete sign up process</string>
+    <string name="continuet">Continue</string>
+    <string name="e_google_sign_in">Google sign in failed</string>
+    <!--home-->
+    <string name="home_st">MONOPRIX</string>
+    <string name="en">En</string>
+    <string name="storelocation">Store Location</string>
+    <string name="myshopping">My Shopping List</string>
+    <!--
+        <string name="myrewards">My Rewards</string>
+    -->
+    <string name="myrewards">Monoprix Loyalty Program</string>
+    <string name="measy">Shop Online</string>
+    <string name="nopromotionsavailable">No Promotions available right now</string>
+    <!--    <string name="measy">Monoprix Promotion</string>-->
+    <string name="location">Location</string>
+    <string name="promotions">Promotions</string>
+    <string name="itworks">How it work?</string>
+    <string name="mymonoprix">Start my Monoprix Easy Journey</string>
+    <string name="mycard">MY CARD</string>
+    <string name="loyalty">LOYALTY</string>
+    <string name="cag">MA CAGNOTTE</string>
+    <string name="selang">Select Language</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <!--bottom navigation bar-->
+    <string name="home">Home</string>
+    <string name="shlist">Shopping List</string>
+    <string name="shop">Shop Online</string>
+    <string name="stories">Stories</string>
+    <string name="scanproduct">Scan Products</string>
+    <string name="loyalbalance">Loyalty Balance</string>
+    <!--
+        <string name="rewards">Rewards</string>
+    -->
+
+
+    <string name="doha">Doha</string>
+    <string name="al_rayan">Al Rayyan</string>
+    <string name="al_daayen">Al Daayen</string>
+    <string name="umm_salal">Umm Salal</string>
+    <string name="al_shani">Al Shahaniya</string>
+    <string name="al_khor">Al Khor</string>
+    <string name="al_shamal">Al Shamal</string>
+    <string name="al_wakra">Al Wakra</string>
+
+    <string name="westbay">West Bay</string>
+    <string name="aijasra">Al Jasra</string>
+    <string name="thepearl">The Pearl</string>
+    <string name="albaaye">Al Baaya</string>
+    <string name="oldairport">Old Airport</string>
+    <string name="dohaport">Doha Port</string>
+    <string name="lusail">Lusail</string>
+    <string name="diplomaticarea">Diplomatic Area</string>
+
+
+    <string name="rewards">My Loyalty</string>
+    <string name="please_fill_allthedetails">Please fill all the details to continue.</string>
+    <string name="loyal_point">Loyalty Point</string>
+    <string name="loyal_qar">Loyalty QAR</string>
+    <string name="redeem">REDEEM</string>
+    <string name="lp_pre_msg">You have</string>
+    <string name="lp_post_msg">Loyalty points. Enter the points you wish to redeem</string>
+    <string name="loyal_points">Loyalty Points</string>
+    <string name="points">Points</string>
+    <string name="use_points">REDEEM</string>
+    <string name="email_send">Your request to register this device has been sent successfully to Monoprix Qatar, You will receive an email confirmation once the device is approved</string>
+    <!--loyalty-->
+    <string name="myloyalty">My loyalty account</string>
+    <string name="cardnumber">Your card number</string>
+    <string name="displaymycard">DISPLAY MY CARD</string>
+    <string name="currency">QAR 0.00</string>
+    <string name="Loyalty_currency">0.00 QR</string>
+    <!--navigation drawer-->
+    <string name="myapp">My Application : How does it work?</string>
+    <string name="howdoesitworks">How does it work?</string>
+    <string name="contactus">Contact Us</string>
+    <string name="deleteaccount">Delete Account</string>
+    <string name="logout">Logout</string>
+    <!--    <string name="del_user">Delete User</string>-->
+    <string name="drawer_open">Open</string>
+    <string name="allow">Allow</string>
+    <string name="drawer_close">Close</string>
+    <string name="mydeli">My Delivery Address</string>
+    <string name="mypro">Shop Online</string>
+    <string name="mloyaltyprogram">M’ Loyalty Program</string>
+    <string name="mloyalty">Loyalty</string>
+
+    <string name="mymono">My Monoprix Card</string>
+    <string name="oursh">Our Shops</string>
+    <string name="shoppinghistory">Shopping History</string>
+    <string name="hello">Hello</string>
+    <string name="hellowithntag">Hello</string>
+    <string name="hello1">Hello</string>
+    <!--    <string name="mycredit">My Credit</string>-->
+    <string name="mcashrewards">M’ Cash Rewards</string>
+
+    <!--    <string name="benefits">M’ Loyalty Benefits</string>-->
+    <string name="benefits">Loyalty Benefits</string>
+
+    <string name="version">Version:</string>
+    <!--    <string name="inspirationawaits">INSPIRATION AWAITS</string>-->
+    <string name="monoprixloyaltyprogram">Monoprix Loyalty program</string>
+    <!--
+        <string name="explore">Explore the store, read and shop one door, a  illion paths - start yours here. </string>
+    -->
+    <!--    <string name="explore">Discover a new journey of saving with Monoprix loyalty program. </string>-->
+    <string name="jointhemonoprixfamily">Join the Monoprix family and start earning cash back  on every shopping. </string>
+    <string name="welcometomonoprix">Welcome to the MONOPRIX family! Enjoy your shopping and earn cash back!</string>
+    <!--shop list-->
+    <string name="emptylist">Your list is empty</string>
+    <string name="emptylist2">Add products to your shopping list.
+        Find it on Monoprix
+    </string>
+    <string name="addproducts">ADD PRODUCTS</string>
+    <string name="checkout">PROCEED TO CHECKOUT</string>
+    <string name="yousave">You Save</string>
+    <string name="areyou">Are You Sure?</string>
+    <string name="doyou">Do you really want to delete these records? This process cannot be undone.
+    </string>
+    <string name="cancel">CANCEL</string>
+    <string name="delete">DELETE</string>
+    <string name="deletemy">Delete My List</string>
+    <string name="shoplist1">Add My Shopping List</string>
+    <string name="shoplist2">Delete My List</string>
+    <string name="shoplist3">Update My List</string>
+    <string name="notificationtitle">Monoprix Qatar -M\' Loyalty Would Like to Send Notifications</string>
+    <string name="notificationmessage">Notifications may include alerts, sound and icon badge. These can be configured in Settings.</string>
+
+    <!--scanner-->
+    <string name="txt_enter_barcode">Enter Barcode</string>
+    <string name="model_qr_price">QAR 00.00</string>
+    <string name="lable_cart_total">Cart Total</string>
+    <string name="txt_no_data">No Data Available!</string>
+    <string name="txt_no_data_desc">Sorry, there is no data available to display</string>
+    <string name="lable_proceedpay">PROCEED TO CHECKOUT</string>
+    <string name="lable_add_to_shopping_list">Add to shopping list</string>
+    <string name="lable_info">Info</string>
+    <string name="txt_alert">Alert!</string>
+    <string name="txt_alert_desc">Items already added to your card, do you want to increase quantity of this item?</string>
+    <string name="txt_yes">Yes</string>
+    <string name="txt_no">No</string>
+    <string name="lable_soldout">Sold out</string>
+    <string name="txt_qr">QR</string>
+    <string name="txt_you_save_qr">You Save QR</string>
+    <string name="turnon">Please turn on GPS to access your current location</string>
+
+    <!--checkout-->
+    <string name="moreitems">More Items</string>
+    <string name="less_item"> Show less items</string>
+    <string name="seldeliverytype">Select Delivery Type</string>
+    <string name="takeaway">Take Away</string>
+    <string name="homedelivery">Home Delivery</string>
+    <string name="ordersummary">Order Summary</string>
+    <string name="subtotal">Sub Total</string>
+    <string name="payableamount">Payable Amount</string>
+    <string name="procedtopaymnent">PROCEED TO PAYMENT</string>
+    <string name="checkout_ti">Checkout</string>
+    <string name="sdeliveryslot">Select Delivery Slot</string>
+    <string name="changeaddress">+ Change or Add Address</string>
+    <string name="mobile">Mobile: </string>
+
+    <!--payment-->
+    <string name="paymethod">Payment Method</string>
+    <string name="cash">Cash</string>
+    <string name="cc">Credit Card</string>
+    <string name="bank_card">Bank Card</string>
+    <string name="credit_card">Credit Card</string>
+
+    <string name="paypal">American Express</string>
+    <string name="dc">Debit Card</string>
+    <string name="choosepay">Choose Payment</string>
+    <string name="paynow">PAY NOW</string>
+    <string name="change">Change</string>
+    <string name="payment">Payment</string>
+    <string name="payment_cc">Credit Card Payment</string>
+    <string name="payment_dc">Debit Card Payment</string>
+    <string name="shippingaddress">Shipping Address</string>
+    <string name="paymentcomplete">Payment Completed Successfully</string>
+    <string name="orderid">Order ID:</string>
+    <string name="orderamount">Order Amount:</string>
+    <string name="confemail">A confirmation email has been sent to</string>
+    <string name="continueshop">CONTINUE SHOPPING</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="paymentfailure">Payment Failure</string>
+    <string name="paymenterror">Error while writing data. Transaction cannot be processed</string>
+    <string name="paymentdone">Payment Done?</string>
+
+    <!--update-->
+    <string name="update">Update</string>
+    <string name="fingerprint">Finger Print Authentication</string>
+    <string name="myaccount">My Account</string>
+
+    <!--change password-->
+    <string name="cp">Current Password
+        <font color="#D81B60">*</font>
+    </string>
+    <string name="np">New Password
+        <font color="#D81B60">*</font>
+    </string>
+    <string name="cnp">Confirm New Password
+        <font color="#D81B60">*</font>
+    </string>
+    <string name="chnagepassword">Change Password</string>
+
+    <string name="pa">Paid Amount</string>
+    <string name="noorder">No ORDERS</string>
+    <string name="password_length_shouldbe_6digit">Password length should be minimum 6 digits.</string>
+
+    <string name="msg">My Message</string>
+    <string name="send">Send</string>
+    <string name="bytele">By telephone - call center</string>
+    <string name="onsocial">FOLLOW US ON SOCIAL MEDIA</string>
+    <string name="contactusinfo">Contact Us: info@monoprixqa.com</string>
+
+    <!--fingerprint-->
+    <string name="authen">Authentication</string>
+    <string name="finger">Input your finger print to sign in</string>
+    <string name="validnotreconized">Fingerprint not recognized.</string>
+
+    <string name="filterby">Filter by</string>
+    <string name="allmyc">All My Coupons</string>
+    <string name="s_how_it">This option is only available in Monoprix Musherib Store</string>
+    <string name="login_alert">Your account is not registered with this device. Please contact Monoprix Qatar to register.</string>
+    <string name="register_device">Register Device</string>
+    <string name="alert">Alert</string>
+    <string name="how1">Start the journey Monoprix easy by scanning your products</string>
+    <string name="how2">Select if you wish to be delivered or pick up your items</string>
+    <string name="how3">Pay directly by the application.</string><!-- OR I go to my Monoprix easy cash counter-->
+
+
+    <!-- steps-->
+    <string name="key_info_point_one">Step 1: Welcome to Monoprix!</string>
+    <string name="key_info_point_two">Step 1: Welcome to Monoprix!</string>
+
+    <!--terms of srvice-->
+    <string name="monoprixcaps">MONOPRIX</string>
+
+    <!--login dialog box-->
+    <string name="sign_in_required">Sign-in Required</string>
+    <string name="alert_address">You are not signed-in, please sign-in to view your address</string>
+    <string name="alert_shoplist">You are not signed-in, please sign-in to view your product list</string>
+    <string name="alert_easy_journey">You are not signed-in, please sign-in to start your monoprix easy journey</string>
+
+
+    <!--error txt-->
+    <string name="er_email">Please enter email id</string>
+    <string name="er_dob">Please enter your Date of birth</string>
+    <string name="er_password">Please enter password</string>
+    <string name="er_name">Please enter first name</string>
+    <string name="er_valid_name">Pleas enter valid name</string>
+    <string name="er_familyname">Please enter family name</string>
+    <string name="enter_lastname">Please enter Last Name</string>
+    <string name="er_countrycode">Please select Country Code</string>
+    <string name="er_mobile">Please enter mobile number</string>
+    <string name="er_inv_email">Please enter valid email id</string>
+    <string name="er_inv_number">Please enter valid mobile number</string>
+    <string name="er_inv_area">Please select your Area</string>
+    <string name="er_loyalty_number">Please enter loyalty number</string>
+    <string name="er_con_password">Please enter confirm password</string>
+    <string name="er_confirm">Please confirm that i am 18 years or above</string>
+    <string name="er_agree">Please confirm that I have read &amp; agree to the terms &amp; conditions</string>
+    <string name="er_gender">Please select Name Prefix</string>
+    <string name="et_up_password">Password and confirm password must be same</string>
+    <string name="er_otp">Please enter OTP</string>
+    <string name="et_deliverytype">Please select delivery type</string>
+    <string name="er_addre_type">Please select address type</string>
+    <string name="er_zoneno">Please Select Zone No. between 1 to 155</string>
+    <string name="er_delivery_slot">Please select delivery slot</string>
+    <string name="er_payment">Please select payment</string>
+    <string name="er_address">Please add the address</string>
+    <string name="sel_address">Select Address</string>
+    <string name="er_op">Please enter current password</string>
+    <string name="er_np">Please enter new password</string>
+    <string name="er_cnp">Please enter confirm password</string>
+    <string name="er_match">new password and confirm password must be same</string>
+    <string name="er_msg">Please enter message</string>
+    <string name="er_postal_code">Please enter your postal code</string>
+    <string name="er_address1">Please enter your Address</string>
+    <string name="er_loyalty">No loyalty Balance</string>
+    <string name="er_email_phone">Please enter email id or phone number</string>
+
+    <!--Add New Address-->
+    <string name="hint_address">Street Number / Area</string>
+    <string name="hint_postal_code">Postal Code</string>
+    <string name="hint_country">Country</string>
+    <string name="places">Places</string>
+    <string name="selectplace">Select Place</string>
+    <string name="label_save_continue">SAVE &amp; CONTINUE</string>
+    <string name="locateme">Locate me</string>
+    <string name="label_home">Home</string>
+    <string name="label_office">Office</string>
+    <string name="label_other">Other</string>
+    <string name="setdefault">Set Default Address</string>
+    <string name="editaddress">Edit Address</string>
+    <string name="slectcity">Select City</string>
+    <string name="selectarea">Area / Zone</string>
+
+    <!--Address List-->
+    <string name="label_edit">Edit</string>
+    <string name="label_add_new_address">+ Add New Address</string>
+    <string name="label_no_address">No address found, Add new address to continue.</string>
+    <string name="addaddress">Add Address</string>
+    <string name="addresslist">Address List</string>
+    <string name="iems">items:</string>
+    <string name="item">item:</string>
+    <!--    <string name="are_you_sure_wantto_deladdress">Are you sure you want to Delete this Address?</string>-->
+    <!--    <string name="are_you_sure_wantto_delaccount">Are you sure you want to Delete this Account?</string>-->
+
+    <string name="label_you_are_at">You are at:</string>
+    <string name="label_start_scanning">START SCANNING</string>
+    <string name="label_no_store">No Store Available!</string>
+    <string name="shoptiming">Shop Timings:</string>
+
+    <!--info-->
+    <string name="infoheading">How it works</string>
+    <string name="infodesc">
+        1.\u0020   Scan your products \n \n \n
+        2.\u0020   Select takeaway or delivery option \n \n \n
+        3.\u0020   Pay in app</string><!-- or at cash counter-->
+    <!--splash retry-->
+    <string name="retry">Retry</string>
+    <string name="erorretry">Something went wrong we are on it please retry again</string>
+    <!--barcode dialogbox-->
+    <string name="er_barcode">Your cart contains items from a different store. Would you like to reset your cart before browsing this store?</string>
+    <string name="ok">OK</string>
+    <string name="updatejust">An update has just been downloaded.</string>
+    <string name="restart">RESTART</string>
+    <string name="er_cart_empty">Your cart is empty</string>
+    <string name="er_cart_empty1">Scan item barcode to add to cart</string>
+    <!--firebase update-->
+    <string name="updateavail">Update available</string>
+    <string name="update_avail">Update</string>
+    <string name="skip">SKIP</string>
+
+    <string name="free">Free</string>
+    <string name="qantity">Quantity:</string>
+    <string name="ourstore">Our Stores</string>
+    <string name="fetchotp">Trying to fetch OTP</string>
+    <string name="Qatarcurrency">QAR</string>
+    <string name="weight">Weight</string>
+    <string name="er_logout">Are you sure to logout?</string>
+    <string name="msg_fingerprint">Are you sure you want to disable</string>
+    <string name="del_msg">Do you want to remove this item from your cart?</string>
+    <string name="home_delivery_er">Home delivery is available on orders above 99 QAR.</string>
+    <string name="payment_txt">Payment Mode :</string>
+    <string name="address_lbl">Address :</string>
+    <string name="loyality_txt">The Loyalty QR account is exclusively for Ali Bin Ali employees</string>
+    <string name="re_order">Reorder</string>
+    <string name="direction">DIRECTIONS</string>
+    <string name="write_shopping_list">You can write your shopping list.</string>
+    <string name="save_shopping_list">Your shopping list has been save.</string>
+    <string name="submit">SUBMIT</string>
+    <string name="selected_slot">Selected Delivery Slot is for Tomorrow Delivery.</string>
+    <string name="Please_valid_points">Please enter valid points.</string>
+    <string name="plz_enter_min_redeem_point">Minimum redeem amount should be 1 QAR.</string>
+    <string name="enough_points">You don\'t have enough points to redeem this order.</string>
+    <string name="actual_QAR">Please enter actual QAR to be redeem.</string>
+    <string name="start">Start</string>
+    <string name="_974_qatar">974 (Qatar) </string>
+    <string name="select_country">Home Country</string>
+    <string name="country">Country</string>
+    <string name="please_select_birthcountry">Please select your birth Country</string>
+    <string name="qatar">Qatar</string>
+    <string name="welcometotheMono">Welcome to the Monoprix Family! Your M’Loyalty account will be activated within 24hrs.</string>
+
+</resources>

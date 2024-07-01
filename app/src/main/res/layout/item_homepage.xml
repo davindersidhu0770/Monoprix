@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/c1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_outer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardBackgroundColor="@color/theme"
+        card_view:cardCornerRadius="9dp"
+        card_view:cardElevation="3dp" >
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivone"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+            </ImageView>
+
+            <com.production.monoprix.util.TextviewMedium
+                android:id="@+id/txt_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivone"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+
+                android:padding="3sp"
+                android:singleLine="true"
+                android:text="@string/myshopping"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/img_lock"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="@dimen/five"
+                android:layout_marginEnd="@dimen/five"
+                android:src="@drawable/ic_lock"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</RelativeLayout>

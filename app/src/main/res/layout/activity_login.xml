@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:background="@color/theme">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="60sp"
+                android:src="@drawable/monoprixtext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.production.monoprix.util.TextviewMedium
+                android:id="@+id/txt_st_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/thirty"
+                android:layout_marginTop="@dimen/thirty"
+                android:layout_marginEnd="@dimen/thirty"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/headertxt"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+            <com.production.monoprix.util.TextviewSemiBold
+                android:id="@+id/txt_signup"
+                android:layout_width="match_parent"
+                android:layout_height="44sp"
+                android:layout_marginStart="@dimen/forty"
+                android:layout_marginTop="@dimen/forty"
+                android:layout_marginEnd="@dimen/forty"
+                android:layout_marginBottom="@dimen/thirty"
+                android:background="@drawable/white_rectangle_corner_back"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/crmyacc"
+                android:textColor="@color/theme"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_st_head" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/theme"
+                app:layout_constraintTop_toBottomOf="@+id/txt_signup">
+
+                <com.production.monoprix.util.TextviewMedium
+                    android:id="@+id/txt_st_alrdy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/forty"
+                    android:layout_marginTop="@dimen/twenty"
+                    android:layout_marginEnd="@dimen/forty"
+                    android:lineSpacingExtra="2.3sp"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:text="@string/alerdy"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/forty"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/forty"
+                    android:theme="@style/TextLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_st_alrdy">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/email"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/poppinsmedium"
+
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/forty"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/forty"
+                    android:theme="@style/TextLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_input_email"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/passwordicon"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.production.monoprix.util.TextviewRegular
+                    android:id="@+id/txt_forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginEnd="@dimen/forty"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/forgot"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_input_password" />
+
+                <com.production.monoprix.util.TextviewRegular
+                    android:id="@+id/txt_stay_logged_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/forty"
+                    android:layout_marginTop="@dimen/twenty"
+                    android:layout_marginBottom="20dp"
+                    android:drawableStart="@drawable/ic_checkbox_off"
+                    android:drawablePadding="@dimen/ten"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="2.3sp"
+                    android:text="@string/stayloo"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_forgot_password" />
+
+                <com.production.monoprix.util.TextviewSemiBold
+                    android:id="@+id/txt_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="44sp"
+                    android:layout_marginStart="@dimen/forty"
+                    android:layout_marginTop="@dimen/twenty"
+                    android:layout_marginEnd="@dimen/forty"
+                    android:layout_marginBottom="@dimen/thirty"
+                    android:background="@drawable/white_rectangle_corner_back"
+                    android:gravity="center"
+                    android:lineSpacingExtra="1sp"
+                    android:text="@string/signin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_stay_logged_in" />
+
+
+                <ImageView
+                    android:id="@+id/v1"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="@dimen/forty"
+                    android:layout_marginTop="@dimen/thirty"
+                    android:layerType="software"
+                    android:src="@drawable/dotted"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_or"
+                    app:layout_constraintHorizontal_weight="4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_signin" />
+
+                <com.production.monoprix.util.TextviewBold
+                    android:id="@+id/txt_or"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fifteen"
+                    android:layout_marginTop="@dimen/ten"
+                    android:text="@string/or"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twentysp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/v2"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/v1"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_signin" />
+
+                <ImageView
+                    android:id="@+id/v2"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="@dimen/thirty"
+                    android:layout_marginEnd="@dimen/twenty"
+                    android:layerType="software"
+                    android:src="@drawable/dotted"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="4"
+                    app:layout_constraintStart_toEndOf="@+id/txt_or"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_signin" />
+
+                <com.production.monoprix.util.TextviewSemiBold
+                    android:id="@+id/txt_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twenty"
+                    android:layout_marginEnd="@dimen/twenty"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/connect"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_or" />
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twenty"
+                    android:layout_marginBottom="@dimen/thirty"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_connect">
+
+                    <ImageView
+                        android:id="@+id/img_facebook_login"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_facebook"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/signin_twitter"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="@dimen/twenty"
+                        android:src="@drawable/ic_twitter"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_google_login"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="@dimen/twenty"
+                        android:src="@drawable/ic_google_plus"
+                        app:layout_constraintStart_toEndOf="@+id/img_facebook" />
+
+                    <ImageView
+                        android:id="@+id/img_insta"
+                        android:layout_width="34dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="@dimen/twenty"
+                        android:src="@drawable/instagram"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toEndOf="@+id/img_insta" />
+
+                    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                        android:id="@+id/twitter_sign_in_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

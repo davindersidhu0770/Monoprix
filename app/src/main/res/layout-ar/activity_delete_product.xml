@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+            android:id="@+id/include"
+            layout="@layout/include_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <ImageView
+            android:id="@+id/img_st_delete"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/fifty"
+            android:src="@drawable/ic_throw"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_st_are"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/forty"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.03"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/areyou"
+            android:textColor="@color/red"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_st_delete" />
+
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_st_do_you"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.03"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/doyou"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/fifteensp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_st_are" />
+
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/forty"
+            android:layout_marginTop="@dimen/forty"
+            android:layout_marginEnd="@dimen/forty"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:lineSpacingExtra="3sp"
+            android:paddingTop="@dimen/ten"
+            android:paddingBottom="@dimen/ten"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toStartOf="@+id/txt_delete"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_st_do_you" />
+
+    <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/forty"
+            android:layout_marginEnd="@dimen/forty"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:lineSpacingExtra="3sp"
+            android:paddingTop="@dimen/ten"
+            android:paddingBottom="@dimen/ten"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintStart_toEndOf="@+id/txt_cancel"
+            app:layout_constraintTop_toBottomOf="@+id/txt_st_do_you" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,824 @@
+[
+  {
+    "ZONENO": 1,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Jasra"
+    ]
+  },
+  {
+    "ZONENO": 2,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Bidda"
+    ]
+  },
+  {
+    "ZONENO": 3,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Mushaireb"
+    ]
+  },
+  {
+    "ZONENO": 4,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Mushaireb"
+    ]
+  },
+  {
+    "ZONENO": 5,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Barahat Al Jufairi",
+      "Al Najada",
+      "Fereej Al Asmakh"
+    ]
+  },
+  {
+    "ZONENO": 6,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Old Al Ghanim"
+    ]
+  },
+  {
+    "ZONENO": 7,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Souq (Souq Waqif)"
+    ]
+  },
+  {
+    "ZONENO": 12,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Bidda",
+      "Rumaila",
+      "Wadi Al Sail"
+    ]
+  },
+  {
+    "ZONENO": 13,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Mushaireb"
+    ]
+  },
+  {
+    "ZONENO": 14,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Fereej Abdel Aziz"
+    ]
+  },
+  {
+    "ZONENO": 15,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Doha Al Jadeeda"
+    ]
+  },
+  {
+    "ZONENO": 16,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Old Al Ghanim"
+    ]
+  },
+  {
+    "ZONENO": 17,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Ruffaa",
+      "Al Hitmi"
+    ]
+  },
+  {
+    "ZONENO": 18,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Slata",
+      "Al Mirqab"
+    ]
+  },
+  {
+    "ZONENO": 19,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Doha Port"
+    ]
+  },
+  {
+    "ZONENO": 20,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Wadi Al Sail"
+    ]
+  },
+  {
+    "ZONENO": 21,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Rumaila"
+    ]
+  },
+  {
+    "ZONENO": 22,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Bin Mahmoud"
+    ]
+  },
+  {
+    "ZONENO": 23,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Bin Mahmoud"
+    ]
+  },
+  {
+    "ZONENO": 24,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Rawdat Al Khail",
+      "Al Muntazah"
+    ]
+  },
+  {
+    "ZONENO": 25,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Mansoura",
+      "Bin Dirhem"
+    ]
+  },
+  {
+    "ZONENO": 26,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Najma"
+    ]
+  },
+  {
+    "ZONENO": 27,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Umm Ghuwailina"
+    ]
+  },
+  {
+    "ZONENO": 28,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Khulaifat",
+      "Ras Bu Abboud"
+    ]
+  },
+  {
+    "ZONENO": 29,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Ras Bu Abboud"
+    ]
+  },
+  {
+    "ZONENO": 30,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Duhail"
+    ]
+  },
+  {
+    "ZONENO": 31,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Umm Lekhba"
+    ]
+  },
+  {
+    "ZONENO": 32,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Madinat Khalifa North",
+      "Dahl Al Hamam"
+    ]
+  },
+  {
+    "ZONENO": 33,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Markhiya"
+    ]
+  },
+  {
+    "ZONENO": 34,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Madinat Khalifa South"
+    ]
+  },
+  {
+    "ZONENO": 35,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Kulaib"
+    ]
+  },
+  {
+    "ZONENO": 36,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Messila"
+    ]
+  },
+  {
+    "ZONENO": 37,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "New Al Hitmi",
+      "Bin Omran",
+      "Hamad Medical City"
+    ]
+  },
+  {
+    "ZONENO": 38,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Sadd"
+    ]
+  },
+  {
+    "ZONENO": 39,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Nasr",
+      "Al Sadd",
+      "Al Mirqab Al Jadeed"
+    ]
+  },
+  {
+    "ZONENO": 40,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "New Slata"
+    ]
+  },
+  {
+    "ZONENO": 41,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Nuaija"
+    ]
+  },
+  {
+    "ZONENO": 42,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Hilal"
+    ]
+  },
+  {
+    "ZONENO": 43,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Maamoura",
+      "Nuaija-Fereej Al Ali"
+    ]
+  },
+  {
+    "ZONENO": 44,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Nuaija"
+    ]
+  },
+  {
+    "ZONENO": 45,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Old Airport (Mathar Qadeem)"
+    ]
+  },
+  {
+    "ZONENO": 46,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Thumama"
+    ]
+  },
+  {
+    "ZONENO": 47,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Thumama"
+    ]
+  },
+  {
+    "ZONENO": 48,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Doha International Airport"
+    ]
+  },
+  {
+    "ZONENO": 49,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Hamad International Airport",
+      "Banana Island",
+      "Ras Bu Fontas"
+    ]
+  },
+  {
+    "ZONENO": 50,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Thumama"
+    ]
+  },
+  {
+    "ZONENO": 51,
+    "MUNCIPALITY": "Al Rayyan",
+    "PLACES": [
+      "Bani Hajer",
+      "Al Seej",
+      "Al Themaid",
+      "Gharaffat Al Rayan",
+      "Izghawa",
+      "Jery Al Dabi",
+      "QNCC",
+      "Rawdat Al Jahhaniya",
+      "Rawdat Egdaim",
+      "Shariya"
+    ]
+  },
+  {
+    "ZONENO": 52,
+    "MUNCIPALITY": "Al Rayyan",
+    "PLACES": [
+      "Al Luqta",
+      "Old Al Rayyan",
+      "Al Shaqab",
+      "Lebday",
+      "Fereej Al Zaeem",
+      "Education City"
+    ]
+  },
+  {
+    "ZONENO": 53,
+    "MUNCIPALITY": "Al Rayyan",
+    "PLACES": [
+      "New Al Rayyan",
+      "Muaither",
+      "Al Wajba",
+      "Rawdat Abal Heeran",
+      "Umm Al Juwashen"
+    ]
+  },
+  {
+    "ZONENO": 54,
+    "MUNCIPALITY": "Al Rayyan",
+    "PLACES": [
+      "Baaya",
+      "Muraikh",
+      "Mehairja",
+      "Fereej Al Amir",
+      "Luaib",
+      "Aspire Zone",
+      "Fereej Al Soudan"
+    ]
+  },
+  {
+    "ZONENO": 55,
+    "MUNCIPALITY": "Al Rayyan",
+    "PLACES": [
+      "Fereej Al Soudan",
+      "Al Waab",
+      "Al Aziziya",
+      "Al Ghanim Al Jadeed",
+      "Al Mearad",
+      "Al Sailiya",
+      "Bu Sidra",
+      "Fereej Al Manaseer",
+      "Fereej Al Murra",
+      "Muaither",
+      "Umm Al Seneem"
+    ]
+  },
+  {
+    "ZONENO": 56,
+    "MUNCIPALITY": "Al Rayyan",
+    "PLACES": [
+      "Bu Hamour",
+      "Ain Khaled",
+      "Mesaimeer",
+      "Al Maamoura",
+      "Barwa City",
+      "Fereej Al Asiri",
+      "New Fereej Al Khulaifat"
+    ]
+  },
+  {
+    "ZONENO": 57,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Industrial Area (Sanayah)"
+    ]
+  },
+  {
+    "ZONENO": 58,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Wholesale Market"
+    ]
+  },
+  {
+    "ZONENO": 60,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Dafna"
+    ]
+  },
+  {
+    "ZONENO": 61,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Al Dafna",
+      "Al Gassar"
+    ]
+  },
+  {
+    "ZONENO": 62,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Lekhwair"
+    ]
+  },
+  {
+    "ZONENO": 63,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Onaiza"
+    ]
+  },
+  {
+    "ZONENO": 64,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Lejbailat"
+    ]
+  },
+  {
+    "ZONENO": 65,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Onaiza"
+    ]
+  },
+  {
+    "ZONENO": 66,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Legtaifiya",
+      "Onaiza",
+      "The Pearl",
+      "Al Gassar",
+      "Katara Cultural Village"
+    ]
+  },
+  {
+    "ZONENO": 67,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Hazm Al Markhiya"
+    ]
+  },
+  {
+    "ZONENO": 68,
+    "MUNCIPALITY": "Doha",
+    "PLACES": [
+      "Jelaiah",
+      "Al Tarfa",
+      "Jeryan Nejaima"
+    ]
+  },
+  {
+    "ZONENO": 69,
+    "MUNCIPALITY": "Al Daayen",
+    "PLACES": [
+      "Al Egla",
+      "Lusail",
+      "Jabal Thuaileb",
+      "Al Kharayej",
+      "Wadi Al Banat"
+    ]
+  },
+  {
+    "ZONENO": 70,
+    "MUNCIPALITY": "Al Daayen",
+    "PLACES": [
+      "Leabaib",
+      "Al Ebb",
+      "Wadi Al Banat",
+      "Al Kheesa",
+      "Rawdat Al Hamama",
+      "Wadi Al Wasah",
+      "Jeryan Jenaihat",
+      "Al Masrouhiya",
+      "Al Rehayya",
+      "Al Sakhama",
+      "Jery Al Matrooshi",
+      "Semaisma",
+      "Tenbek",
+      "Umm Garn",
+      "Wadi Al Ewaira",
+      "Al Jeryan",
+      "Al Kheesa"
+    ]
+  },
+  {
+    "ZONENO": 71,
+    "MUNCIPALITY": "Umm Salal",
+    "PLACES": [
+      "Al Froosh",
+      "Al Kharaitiyat",
+      "Bu Fessela",
+      "Bu Garn",
+      "Bu Glaila",
+      "Izghawa",
+      "Jery Khabbab",
+      "Snay Lehmaidi",
+      "Umm Al Amad",
+      "Umm Ebairiya",
+      "Umm Salal Ali",
+      "Umm Salal Muhammad"
+    ]
+  },
+  {
+    "ZONENO": 72,
+    "MUNCIPALITY": "Al Shahaniya",
+    "PLACES": [
+      "Leatooriya",
+      "Bu Kheesa",
+      "Atran",
+      "Wadi Laswag",
+      "Broog"
+    ]
+  },
+  {
+    "ZONENO": 73,
+    "MUNCIPALITY": "Al Shahaniya",
+    "PLACES": [
+      "Lijmiliya/Al Jemailiya",
+      "Al Gaeyya",
+      "Al Hawafer",
+      "Abal Jahazel",
+      "Getna",
+      "Lebsayyer",
+      "Umm Sidra"
+    ]
+  },
+  {
+    "ZONENO": 74,
+    "MUNCIPALITY": "Al Khor and Al Thakira",
+    "PLACES": [
+      "Al Khor City",
+      "Rasheeda",
+      "Umm Ejwaifa"
+    ]
+  },
+  {
+    "ZONENO": 75,
+    "MUNCIPALITY": "Al Khor",
+    "PLACES": [
+      "Al Thakira",
+      "Ras Laffan",
+      "Umm Birkah"
+    ]
+  },
+  {
+    "ZONENO": 76,
+    "MUNCIPALITY": "Al Khor",
+    "PLACES": [
+      "Leghraifa",
+      "Rawdat Hawtan",
+      "Rawdat Al Faras",
+      "Leawaija"
+    ]
+  },
+  {
+    "ZONENO": 77,
+    "MUNCIPALITY": "Al Shamal",
+    "PLACES": [
+      "Fuwairit",
+      "Ain Sinan",
+      "Madinat Al Kaaban",
+      "Al Marroona"
+    ]
+  },
+  {
+    "ZONENO": 78,
+    "MUNCIPALITY": "Al Shamal",
+    "PLACES": [
+      "Al Areesh",
+      "Abu Zaluf/Abu Dhalouf",
+      "Al Zubara"
+    ]
+  },
+  {
+    "ZONENO": 79,
+    "MUNCIPALITY": "Al Shamal",
+    "PLACES": [
+      "Ruwais",
+      "Madinat Ash Shamal",
+      "Al Ghariya"
+    ]
+  },
+  {
+    "ZONENO": 80,
+    "MUNCIPALITY": "Al Shahaniya",
+    "PLACES": [
+      "Al Sheehaniya",
+      "Al Ruwaidat",
+      "Umm Lekhya",
+      "Umm Leghab",
+      "Lebyatiya"
+    ]
+  },
+  {
+    "ZONENO": 81,
+    "MUNCIPALITY": "Al Rayyan",
+    "PLACES": [
+      "Mebaireek",
+      "New Industrial Area",
+      "Mekaines",
+      "Al Edaid Base",
+      "Al Khaldiya",
+      "Al Hemaila",
+      "Jeryan Al Reyoog"
+    ]
+  },
+  {
+    "ZONENO": 82,
+    "MUNCIPALITY": "Al Shahaniya",
+    "PLACES": [
+      "Bu Garn",
+      "Umm Al Zubar West",
+      "Rawdat Kharja"
+    ]
+  },
+  {
+    "ZONENO": 83,
+    "MUNCIPALITY": "Al Rayyan",
+    "PLACES": [
+      "Al Karaana",
+      "Al Jelaiat",
+      "Umm Al March",
+      "Umm Al Shubrum",
+      "Sabina",
+      "Leashara",
+      "Al Deainiyat",
+      "Al Rekayya"
+    ]
+  },
+  {
+    "ZONENO": 84,
+    "MUNCIPALITY": "Al Shahaniya",
+    "PLACES": [
+      "Umm Bab",
+      "Umm Samra",
+      "Bu Ghawlana",
+      "Al Hamla",
+      "Bu Traifa",
+      "Umm Al Dayyat",
+      "Al Shabhana"
+    ]
+  },
+  {
+    "ZONENO": 85,
+    "MUNCIPALITY": "Al Rayyan",
+    "PLACES": [
+      "Al Nasraniya",
+      "Tharb",
+      "Imlaih",
+      "Abal Halayem"
+    ]
+  },
+  {
+    "ZONENO": 86,
+    "MUNCIPALITY": "Al Shahaniya",
+    "PLACES": [
+      "Dukhan",
+      "Afjan",
+      "Al Zeghain",
+      "Barga Egaif",
+      "Umm Wadi"
+    ]
+  },
+  {
+    "ZONENO": 90,
+    "MUNCIPALITY": "Al Wakra",
+    "PLACES": [
+      "Al Wakra South East"
+    ]
+  },
+  {
+    "ZONENO": 91,
+    "MUNCIPALITY": "Al Wakra",
+    "PLACES": [
+      "Al Mashaf",
+      "Al Wukair",
+      "Muaither Al Wukair",
+      "Umm Besher",
+      "Wadi Aba Seleel"
+    ]
+  },
+  {
+    "ZONENO": 92,
+    "MUNCIPALITY": "Al Wakra",
+    "PLACES": [
+      "Mesaieed",
+      "Mesaieed Free Zone"
+    ]
+  },
+  {
+    "ZONENO": 93,
+    "MUNCIPALITY": "Al Wakra",
+    "PLACES": [
+      "Mesaieed Industrial Area",
+      "Sealine"
+    ]
+  },
+  {
+    "ZONENO": 94,
+    "MUNCIPALITY": "Al Wakra",
+    "PLACES": [
+      "Shagra",
+      "Al Afja",
+      "Jabal Marmi",
+      "Leshaiger",
+      "Al Metfardat"
+    ]
+  },
+  {
+    "ZONENO": 95,
+    "MUNCIPALITY": "Al Wakra",
+    "PLACES": [
+      "Al Kharrara",
+      "Umm Garn",
+      "Al Daiha",
+      "Traina",
+      "Ghasham",
+      "Al Sidari",
+      "Al Nigyan",
+      "Wadi Jallal",
+      "Al Nehaidan",
+      "Mesaigra"
+    ]
+  },
+  {
+    "ZONENO": 96,
+    "MUNCIPALITY": "Al Rayyan",
+    "PLACES": [
+      "Abu Samra",
+      "Umm Ain",
+      "Rawdat Ishala",
+      "Eglat Faisal",
+      "Learaig",
+      "Wadi Al Jihh",
+      "Al Slemiya",
+      "Al Galayel",
+      "Umm Jarra"
+    ]
+  },
+  {
+    "ZONENO": 97,
+    "MUNCIPALITY": "Al Rayyan",
+    "PLACES": [
+      "Sawda Natheel",
+      "Al Garayen",
+      "Barga Al Kharaz",
+      "Geezan Learaig",
+      "Barga Al Hamil",
+      "Ghareb Al Thawr",
+      "Rawdat Al Faras",
+      "Jaww Al Kharaz"
+    ]
+  },
+  {
+    "ZONENO": 98,
+    "MUNCIPALITY": "Al Wakra",
+    "PLACES": [
+      "Khor Al Udaid",
+      "Nega Al Fagara",
+      "Aamra",
+      "Negyan Al Sada",
+      "Wadi Abal Gherban",
+      "Legsaira",
+      "Eglat Zuwayyed",
+      "Lekhfoos"
+    ]
+  }
+]

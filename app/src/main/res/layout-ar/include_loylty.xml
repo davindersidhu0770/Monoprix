@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.production.monoprix.util.TextviewRegular
+        android:id="@+id/txt_st_card_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twenty"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/home_st"
+        android:textColor="@color/red"
+        android:textSize="@dimen/sixteensp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/r_bar_code"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@drawable/ic_loyalty"
+        app:layout_constraintTop_toBottomOf="@+id/txt_st_card_no">
+
+
+    </FrameLayout>
+
+    <com.production.monoprix.util.TextviewBold
+        android:id="@+id/txt_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="abcd"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp"
+        android:layout_marginStart="@dimen/fifty_five"
+        android:visibility="visible"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@id/txt_barcode_no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_bar_code"
+
+        />
+
+    <com.production.monoprix.util.TextviewBold
+        android:id="@+id/txt_barcode_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="ertf"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp"
+        android:visibility="visible"
+        app:layout_constrainedWidth="true"
+        android:layout_marginEnd="@dimen/twenty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/r_bar_code" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

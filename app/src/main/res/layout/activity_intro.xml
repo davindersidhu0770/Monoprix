@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF0000">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rlbottom" />
+
+        <RelativeLayout
+            android:id="@+id/rlbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_90sdp">
+
+            <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                android:id="@+id/dot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                app:dotsColor="@color/white"
+                app:dotsSize="15dp"
+                app:dotsSpacing="5dp"
+                app:selectedDotColor="#9D0E15"
+                app:stiffness="300" />
+
+            <com.production.monoprix.util.TextviewRegular
+                android:id="@+id/tvskip"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="40sp"
+                android:layout_below="@+id/dot2"
+                android:fontFamily="@font/poppinsregular"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/skip"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <com.production.monoprix.util.TextviewRegular
+                android:id="@+id/tvstart"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="38sp"
+                android:layout_below="@+id/dot2"
+                android:fontFamily="@font/poppinsregular"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/start"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:background="@drawable/white_rectangle_corner_back"
+                android:lineSpacingExtra="1sp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textColor="@color/theme"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

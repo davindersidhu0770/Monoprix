@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="60sp"
+        android:src="@drawable/monoprixtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"/>
+
+    <com.production.monoprix.util.TextviewMedium
+        android:id="@+id/txt_st_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/enterotp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+    <com.production.monoprix.util.TextviewMedium
+        android:id="@+id/txt_st_otp_on_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/otpon"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_st_otp" />
+
+    <com.production.monoprix.util.TextviewBold
+        android:id="@+id/lable_otp_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirty"
+        android:layout_marginBottom="@dimen/eight"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="0:0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentysp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/txt_st_otp_on_no" />
+
+    <LinearLayout
+        android:id="@+id/linear_otp_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/twenty"
+        android:layout_marginTop="@dimen/thirty"
+        android:layout_marginEnd="@dimen/twenty"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lable_otp_time">
+
+        <EditText
+            android:id="@+id/et_otp_one"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/eight"
+            android:textCursorDrawable="@null"
+
+            android:layout_weight="1"
+            android:background="@drawable/oval_red_border"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_otp_two"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textCursorDrawable="@null"
+
+            android:layout_margin="@dimen/eight"
+            android:layout_weight="1"
+            android:background="@drawable/oval_red_border"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_otp_three"
+            android:layout_width="50dp"
+            android:textCursorDrawable="@null"
+
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/eight"
+            android:layout_weight="1"
+            android:background="@drawable/oval_red_border"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_otp_four"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textCursorDrawable="@null"
+
+            android:layout_margin="@dimen/eight"
+            android:layout_weight="1"
+            android:background="@drawable/oval_red_border"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_otp_five"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/eight"
+            android:layout_weight="1"
+            android:textCursorDrawable="@null"
+
+            android:background="@drawable/oval_red_border"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <com.production.monoprix.util.TextviewBold
+        android:id="@+id/txt_resend_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty"
+        android:gravity="center_horizontal"
+        android:text="@string/dontreceive"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fifteensp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_otp_no" />
+
+    <com.production.monoprix.util.TextviewSemiBold
+        android:id="@+id/txt_verify"
+        android:layout_width="match_parent"
+        android:layout_height="44sp"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginTop="@dimen/fifty"
+        android:layout_marginEnd="@dimen/thirty"
+        android:layout_marginBottom="@dimen/thirty"
+        android:background="@drawable/white_rectangle_corner_back"
+        android:gravity="center"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/verify"
+        android:textAllCaps="true"
+        android:textColor="@color/theme"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_resend_otp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

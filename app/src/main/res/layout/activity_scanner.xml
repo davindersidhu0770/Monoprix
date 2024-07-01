@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/scan_toolbar"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/scan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/scan_toolbar">
+
+        <SurfaceView
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <com.production.monoprix.model.ScannerOverlay
+            android:id="@+id/scan_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#44FFFFFF"
+            app:line_color="@color/gray"
+            app:line_speed="7"
+            app:line_width="5"
+            app:square_height="250"
+            app:square_width="320" />
+
+        <com.production.monoprix.model.ScannerOverlay
+            android:id="@+id/scan_preview_small"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#44FFFFFF"
+            android:visibility="gone"
+            app:line_color="@color/gray"
+            app:line_speed="6"
+            app:line_width="5"
+            app:square_height="150"
+            app:square_width="270" />
+
+        <TextView
+            android:id="@+id/txt_barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_manual_barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nested_scan_carts"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edt_enter_barcode"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_left_corner_white"
+            android:clickable="false"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center_horizontal|center_vertical"
+            android:imeOptions="actionSend"
+            android:maxLength="25"
+            android:paddingStart="@dimen/two"
+            android:paddingTop="@dimen/twelve"
+            android:paddingBottom="@dimen/twelve"
+            android:singleLine="true"
+            android:text="@string/txt_enter_barcode"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/twelve" />
+
+        <ImageView
+            android:id="@+id/img_close_barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/five"
+            android:layout_marginEnd="@dimen/sixteen"
+            android:background="@drawable/oval_grey_bg"
+            android:padding="@dimen/five"
+            android:src="@drawable/ic_close_white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <com.production.monoprix.util.TextviewBold
+        android:id="@+id/txt_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nested_scan_carts"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/background_right_corner_white"
+        android:drawableStart="@drawable/ic_question"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingStart="@dimen/sixteen"
+        android:paddingTop="@dimen/twelve"
+        android:paddingEnd="@dimen/sixteen"
+        android:paddingBottom="@dimen/twelve"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twelve" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scan_carts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/sixteen"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/cart_include"
+                layout="@layout/layout_scan_cart_items_themebg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--WithCartList-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_scan_cart_lits"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rele_scan_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fourtyfive"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/fourtyfive"
+                android:layout_marginBottom="@dimen/ten"
+                android:background="@drawable/button_background"
+                android:visibility="gone">
+
+                <com.production.monoprix.util.TextviewBold
+                    android:id="@+id/txt_scan_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44sp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/checkout"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rltop"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/theme">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivleft_arrow"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/twenty"
+            app:srcCompat="@drawable/backicon" />
+
+        <ImageView
+            android:id="@+id/ivheader_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/appicon"
+            android:visibility="visible">
+
+        </ImageView>
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/tvtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_left_arrow"
+            android:gravity="center"
+            android:text="@string/home_st"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentysp"
+            android:visibility="gone" />
+
+        <!--
+                <com.production.monoprix.util.TextviewRegular
+                    android:id="@+id/tvtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/img_left_arrow"
+                    android:maxLines="1"
+                    android:layout_marginLeft="10dp"
+                    android:minLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+        -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/twenty"
+            android:src="@drawable/share"
+            android:tint="@color/white"
+            android:visibility="gone">
+
+
+        </ImageView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/include"
+        android:scaleType="fitXY"
+        android:src="@drawable/dummy"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rltop"
+        android:background="@color/white">
+
+    </WebView>
+
+    <RelativeLayout
+        android:id="@+id/rlpromotion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rltop"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rlbottom"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginRight="@dimen/ten"
+            android:background="@drawable/themestroke">
+
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdfView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="5sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/rlbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginBottom="@dimen/twenty"
+            android:background="@drawable/themestroke">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="5sp"
+                android:layout_marginEnd="@dimen/twenty">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+
+                        android:id="@+id/ivleft"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/twenty"
+                        android:src="@drawable/left">
+
+                    </ImageView>
+
+                    <com.production.monoprix.util.TextviewRegular
+                        android:id="@+id/tvpage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/twenty"
+                        android:layout_marginEnd="@dimen/twenty"
+                        android:layout_toRightOf="@+id/ivleft"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textcolor"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/ivright"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tvpage"
+                        android:src="@drawable/right">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivzoomin"
+                    android:layout_width="@dimen/_20sdp"
+
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/zoomin">
+
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/ivzoomout"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_toRightOf="@+id/ivzoomin"
+                    android:layout_weight="1"
+                    android:src="@drawable/zoomout">
+
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/ivshare"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_weight="1"
+                    android:src="@drawable/share">
+
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pdfView" />
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:src="@drawable/logo"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="@dimen/ten"
+        android:visibility="gone" />
+
+</RelativeLayout>

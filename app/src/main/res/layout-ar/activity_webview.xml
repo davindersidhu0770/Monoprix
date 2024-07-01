@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/ivtop"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize" />
+
+    <WebView
+        android:layout_marginStart="@dimen/twenty"
+        android:layout_marginEnd="@dimen/twenty"
+        android:id="@+id/webView"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ivtop"
+        android:scrollbars="none" />
+
+</RelativeLayout>

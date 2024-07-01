@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_rectangle_corner">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.production.monoprix.util.TextviewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/alert"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/eight"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twentysp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_st_how"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:gravity="center_horizontal"
+            android:text="@string/login_alert"
+            android:layout_marginTop="@dimen/fifteen"
+            android:textColor="@color/paycolor"
+            android:textSize="@dimen/fifteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/thirty"
+            android:background="@color/gray"/>
+
+        <com.production.monoprix.util.TextviewBold
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="1sp"
+            android:paddingStart="@dimen/forty"
+            android:paddingTop="@dimen/fifteen"
+            android:paddingEnd="@dimen/forty"
+            android:paddingBottom="@dimen/fifteen"
+            android:text="@string/register_device"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/twentysp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="1sp"
+            android:paddingStart="@dimen/forty"
+            android:paddingTop="@dimen/fifteen"
+            android:paddingEnd="@dimen/forty"
+            android:paddingBottom="@dimen/fifteen"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/twentysp"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

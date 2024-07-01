@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:background="@color/theme"
+        android:id="@+id/rltop"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_left_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/twenty"
+            app:srcCompat="@drawable/backicon" />
+
+        <ImageView
+            android:id="@+id/ivheader_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/appicon"
+            android:visibility="visible">
+
+        </ImageView>
+
+        <com.production.monoprix.util.TextviewRegular
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:minLines="1"
+            android:text="@string/home_st"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rltop"
+        android:layout_margin="@dimen/five"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "kotlin-kapt"
+/*apply plugin: 'io.fabric'*/
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.production.monoprix"
+        minSdkVersion 19
+        targetSdkVersion 33
+        versionCode 25
+        versionName "2.15"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+    }
+    android {
+        lintOptions {
+            abortOnError false
+        }
+        // Temporary fix until alpha10
+        packagingOptions {
+            exclude 'META-INF/proguard/androidx-annotations.pro'
+        }
+    }
+    android {
+        dexOptions {
+            javaMaxHeapSize "4G"
+        }
+        // Temporary fix until alpha10
+        packagingOptions {
+            exclude 'META-INF/proguard/androidx-annotations.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    // Temporary fix until alpha10
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+    packagingOptions {
+        exclude 'META-INF/com.android.tools/proguard/coroutines.pro'
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/INDEX.LIST'
+    }
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+androidExtensions {
+    experimental = true
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.0.2'
+
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    /*design*/
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation "androidx.appcompat:appcompat:1.1.0-rc01"
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    /*Retrofit2*/
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.1.0'
+
+    /*Kotlin*/
+    implementation 'io.reactivex:rxandroid:1.2.0'
+    implementation 'io.reactivex:rxkotlin:0.55.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    /*progressbar_library*/
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+
+    /*recyclerview*/
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha06'
+
+    /*phone number validation*/
+    implementation 'io.michaelrocks:libphonenumber-android:8.9.5'
+
+    /*google auth for auto otp sms*/
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
+
+    /*facebbok*/
+    implementation 'com.facebook.android:facebook-android-sdk:16.0.0'
+
+    /*firebase*/
+    implementation 'com.google.firebase:firebase-messaging:23.3.1'
+    /*for google sign in with firebase authentication*/
+//  implementation 'com.google.firebase:firebase-auth:21.2.0'
+    implementation('com.google.firebase:firebase-auth') {
+        exclude module: "play-services-safetynet"
+    }
+    /*google sign in*/
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+
+    /*slider*/
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    /*google map*/
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+
+    //circulerimageview
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //barcode google vision
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+
+    /*event bus*/
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.9'
+
+    /*location*/
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+
+    /*room libraries for local database*/
+    implementation "androidx.room:room-runtime:2.2.0-rc01"
+    kapt "androidx.room:room-compiler:2.2.0-rc01"
+
+    /*biometric*/
+    implementation 'androidx.biometric:biometric:1.0.0-alpha04'
+
+    //app-updte
+    implementation 'com.google.firebase:firebase-config:19.0.1'
+
+    /*instagram*/
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+
+    /*twitter*/
+
+    implementation 'com.twitter.sdk.android:twitter-core:3.3.0'
+
+    /*immediate update*/
+    implementation 'com.google.android.play:core:1.10.3'
+
+    /*firebase crashlytics*/
+    //noinspection OutdatedLibrary
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+
+    implementation 'pub.devrel:easypermissions:0.2.0'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3'
+
+//    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:30.1.0')
+
+    // Add the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.maps.android:android-maps-utils:0.4+'
+    implementation 'com.github.joielechong:countrycodepicker:2.4.2'
+    implementation "android.arch.lifecycle:extensions:1.1.0"
+
+    // Add the Firebase Core and Dynamic Links dependencies
+    implementation 'com.google.firebase:firebase-core:16.0.7' // Replace with the latest version
+    implementation 'com.google.firebase:firebase-dynamic-links:16.0.7' // Replace with the latest version
+
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include_address_list_toolbar"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_addressLists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_add_new_address"
+        android:layout_below="@+id/include_address_list_toolbar"
+        android:layout_marginBottom="@dimen/twentysp"
+        android:visibility="visible" />
+
+    <com.production.monoprix.util.TextviewSemiBold
+        android:id="@+id/txt_add_new_address"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/twenty_five"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginBottom="@dimen/thirty"
+        android:background="@drawable/dotted_border_theme"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="@dimen/fifteen"
+        android:paddingEnd="@dimen/fifteen"
+        android:text="@string/label_add_new_address"
+        android:textColor="@color/theme"
+        android:textSize="@dimen/fifteen" />
+
+
+    <com.production.monoprix.util.TextviewBold
+        android:id="@+id/txt_no_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="@dimen/fifteen"
+        android:text="@string/label_no_address"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/fifteen"
+        android:visibility="gone" />
+
+</RelativeLayout>

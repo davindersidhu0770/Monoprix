@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/empty_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_empty_cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_empty1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/erorretry"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twentysp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empty_image" />
+
+        <com.production.monoprix.util.TextviewBold
+            android:id="@+id/txt_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginTop="@dimen/forty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:background="@drawable/white_rectangle_corner_back"
+            android:gravity="center"
+            android:lineSpacingExtra="1sp"
+            android:paddingStart="@dimen/fifty"
+            android:paddingTop="@dimen/fifteen"
+            android:paddingEnd="@dimen/fifty"
+            android:paddingBottom="@dimen/fifteen"
+            android:text="@string/retry"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentysp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_empty1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
